@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.10)  4 NOV 2016 13:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.10)  4 NOV 2016 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -334,27 +334,14 @@ LaTeX Info: Redefining \nameref on input line 14.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-LaTeX Warning: Citation `Asimov' on page 1 undefined on input line 43.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-LaTeX Warning: Citation `deepNature' on page 1 undefined on input line 45.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
-
-
-LaTeX Warning: Citation `neuralOnline' on page 1 undefined on input line 47.
-
-
-LaTeX Warning: Citation `statisticNeurons' on page 1 undefined on input line 47
-.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
@@ -370,9 +357,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
 
 LaTeX Warning: Citation `cheapLearning' on page 2 undefined on input line 51.
-
-
-LaTeX Warning: Citation `biology' on page 2 undefined on input line 51.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
@@ -412,37 +396,36 @@ Overfull \hbox (40.38953pt too wide) in paragraph at lines 90--113
  []
 
 [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 158.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
  [4] [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 158.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
  (./Propuesta_JesusPrada.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 158.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 158.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
 Package rerunfilecheck Info: File `Propuesta_JesusPrada.out' has not changed.
 (rerunfilecheck)             Checksum: 0317789ED89A9BBCC04B77B0A6A9842D;318.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 158.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
  ) 
 Here is how much of TeX's memory you used:
- 5720 strings out of 494985
- 85680 string characters out of 6180356
- 181002 words of memory out of 5000000
- 8860 multiletter control sequences out of 15000+600000
- 8233 words of font info for 29 fonts, out of 8000000 for 9000
+ 5715 strings out of 494985
+ 85653 string characters out of 6180356
+ 180048 words of memory out of 5000000
+ 8855 multiletter control sequences out of 15000+600000
+ 7886 words of font info for 28 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  42i,8n,28p,1199b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Propuesta_JesusPrada.pdf (5 pages, 75957 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Propuesta_JesusPrada.pdf (5 pages, 65302 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
+ 87 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
