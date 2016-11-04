@@ -1,0 +1,148 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+%\usepackage[english]{babel}
+\usepackage[latin5]{inputenc}
+\usepackage{hyperref}
+\usepackage[left=3cm,top=3cm,right=3cm,nohead,nofoot]{geometry}
+\usepackage{braket}
+\usepackage{datenumber}
+%\newdate{date}{10}{05}{2013}
+%\date{\displaydate{date}}
+
+\begin{document}
+
+\begin{center}
+\Huge
+Redes neuronales artificiales desde un enfoque físico
+
+\vspace{3mm}
+\Large Jesus David Prada Gonzalez
+
+\large
+201214619
+
+
+\vspace{2mm}
+\Large
+Director: Jaime E. Forero-Romero
+
+\normalsize
+\vspace{2mm}
+
+\today
+\end{center}
+
+
+\normalsize
+\section{Introduction}
+
+%Introducción a la propuesta de Monografía. Debe incluir un breve resumen del estado del arte del problema a tratar. También deben aparecer citadas todas las referencias de la bibliografía (a menos de que se citen más adelante, en los objetivos o metodología, por ejemplo)
+
+Las redes neuronales artificiales son poderosas herramientas en el campo de aprendizaje de máquinas (Machine Learning) inspiradas en los sistemas biológicos. Estas redes son extremadamente eficientes al enfrentarse a ciertos problemas a pesar de que no se conoce muy bien el mecanismo de su éxito. Recientemente se han hecho varios estudios que sugieren analogías físicas fuertemente basadas en la mecánica estadística para entender el funcionamiento de estos sistemas. En este orden de ideas, el propósito de este trabajo está orientado al modelamiento teórico de estas redes por medio de herramientas físicas así como la comprobación empírica de estos modelos al aplicarlos a problemas computacionales reales.
+
+\section{Objetivos Generales}
+
+%Objetivo general del trabajo. Empieza con un verbo en infinitivo.
+
+Estudiar el comportamiento de aprendizaje de las redes neuronales desde un enfoque físico para verificar si su mecanismo puede ser cuantificable de antemano.
+
+\section{Objetivos Específicos}
+
+%Objetivos específicos del trabajo. Empiezan con un verbo en infinitivo.
+
+\begin{itemize}
+	\item Desarrollar redes neuronales simples para familiarizarse con su diseño
+	\item Estudiar a fondo las técnicas computacionales de diseño de redes neuronales, así como los problemas técnicos a los que se pueden enfrentar
+	\item Elegir entre las diferentes aplicaciones de redes neuronales una que sea versátil para el estudio de los modelos físicos asociados
+	\item Estudiar qué posibles modelos físicos pueden ser aplicados a la red neuronal elegida para poder obtener conclusiones acerca de su funcionamiento
+	\item Verificar si las conclusiones de funcionamiento en la red anterior pueden ser ampliadas a otras redes
+\end{itemize}
+
+\section{Metodología}
+
+%Exponer DETALLADAMENTE la metodología que se usará en la Monografía. 
+
+%Monografía teórica o computacional: ¿Cómo se harán los cálculos teóricos? ¿Cómo se harán las simulaciones? ¿Qué requerimientos computacionales se necesitan? ¿Qué espacios físicos o virtuales se van a utilizar?
+
+%Monografía experimental: Recordar que para ser aprobada, los aparatos e insumos experimentales que se usarán en la Monografía deben estar previamente disponibles en la Universidad, o garantizar su disponibilidad para el tiempo en el que se realizará la misma. ¿Qué montajes experimentales se van a usar y que material se requiere? ¿En qué espacio físico se llevarán a cabo los experimentos? Si se usan aparatos externos, ¿qué permisos se necesitan? Si hay que realizar pagos a terceros, ¿cómo se financiará esto?
+
+El estudiante realizará la investigación y el desarrollo de los temas individualmente, con el apoyo periódico del director por medio de las reuniones del grupo de Astrofísica. En estas obtendrá retroalimentación del desarrollo de su trabajo y se decidirá si en algún momento requiere de mayor asesoría por parte del director.\\
+
+La metodología propuesta tiene un componente computacional fuerte relacionado con el desarrollo de varias redes neuronales y el monitoreo de su proceso de aprendizaje para la verificación de las conclusiones teóricas a obtener. A lo sumo, para agilizar los procesos de cómputo, se necesitará acceso al Cluster. Para el desarrollo de la parte teórica será necesaria la revisión de bibliografía especializada sobre el tema. \\
+
+
+\section{Cronograma}
+
+\begin{table}[htb]
+	\begin{tabular}{|c|cccccccccccccccc| }
+	\hline
+	Tareas $\backslash$ Semanas & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16  \\
+	\hline
+	1 & X & X & X & X & X & X &   &   &   &   &   &   &   &   &   &   \\
+	2 & X & X & X & X & X & X & X & X & X &   &   &   &   &   &   &   \\
+	3 &   &   &   &   &   &   &   & X & X & X & X & X & X & X & X & X \\
+	4 &   &   &   &   &   &   &   &   &   &   &   & X & X & X & X & X \\
+	5 &   &   &   &   &   &   &   &   &   & X & X & X & X & X & X & X \\
+	9 &   &   &   &   & X & X & X & X & X &   &   &   & X & X & X & X \\
+
+	
+	Tareas $\backslash$ Semanas & 17 & 18 & 19 & 20 & 21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 & 31 & 32  \\
+	\hline
+	4 & X & X & X & X & X & X &   &   &   &   &   &   &   &   &   &   \\
+	6 &   &   & X & X & X & X & X & X &   &   &   &   &   &   &   &   \\
+	7 &   &   &   &   &   & X & X & X & X & X & X &   &   &   &   &   \\
+	8 &   &   &   &   &   &   &   &   & X & X & X & X & X &   &   &   \\
+	9 & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X & X \\
+
+
+	\hline
+	\end{tabular}
+\end{table}
+\vspace{1mm}
+
+\begin{itemize}
+	\item Tarea 1: Desarrollo de redes neuronales simples
+	\item Tarea 2: Investigación del diseño y funcionamiento de redes neuronales
+	\item Tarea 3: Investigación de modelos teóricos sobre redes neuronales 
+	\item Tarea 4: Desarrollo de intuiciones o modelos verificables sobre el funcionamiento del aprendizaje de las redes
+	\item Tarea 5: Preparación de la presentación de avance
+	\item Tarea 6: Verificación de las conclusiones de los modelos anteriores sobre las redes neuronales artificiales específicas
+	\item Tarea 7: Ampliación a redes neuronales más complejas
+	\item Tarea 8: Desarrollo de resultados y conclusiones del trabajo
+	\item Tarea 9: Escritura del documento final
+\end{itemize}
+
+\section{Personas Conocedoras del Tema}
+
+%Nombres de por lo menos 3 profesores que conozcan del tema. Uno de ellos debe ser profesor de planta de la Universidad de los Andes.
+
+\begin{itemize}
+	\item Nombre de profesor 1 (Instituto o Universidad de afiliaci\'on 1)
+	\item Nombre de profesor 2 (Instituto o Universidad de afiliaci\'on 2)
+	\item Nombre de profesor 3 (Instituto o Universidad de afiliaci\'on 3)
+	\item ...
+\end{itemize}
+
+
+\begin{thebibliography}{10}
+
+\bibitem{Jerry} J. Banks. \textit{Discrete-Event System Simulation}. Fourth Edition. Prentice Hall International Series in Industrial and Systems Engineering, pg 86 - 116 y 219 - 235, (2005).
+
+\bibitem{Bronner} P. Bronner, A. Strunz, C. Silberhorn \& J.P. Meyn. European Journal of Physics, \textbf{30}, 1189-1200, (2009).
+
+\bibitem{LabInt} P. Díaz \& N. Barbosa: \textit{Obtención de números aleatorios}. Informe final del curso Laboratorio Intermedio. Universidad de Los Andes, Bogotá, Colombia, (2012).
+
+\bibitem{Stefannov} A. Stefanov , N. Gisin , O. Guinnard , L. Guinnard \& H. Zbinden. Journal of Modern Optics, \textbf{47}:4, 595-598, (2000).
+
+\end{thebibliography}
+
+\section*{Firma del Director}
+\vspace{1.5cm}
+
+\section*{Firma del Codirector	}
+
+
+
+\end{document} 
