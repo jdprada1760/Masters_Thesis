@@ -40,13 +40,23 @@ Director: Jaime E. Forero-Romero
 
 %Introducción a la propuesta de Monografía. Debe incluir un breve resumen del estado del arte del problema a tratar. También deben aparecer citadas todas las referencias de la bibliografía (a menos de que se citen más adelante, en los objetivos o metodología, por ejemplo)
 
-Las redes neuronales artificiales son poderosas herramientas en el campo de aprendizaje de máquinas (Machine Learning) inspiradas en los sistemas biológicos. Estas redes son extremadamente eficientes al enfrentarse a ciertos problemas a pesar de que no se conoce muy bien el mecanismo de su éxito. Recientemente se han hecho varios estudios que sugieren analogías físicas fuertemente basadas en la mecánica estadística para entender el funcionamiento de estos sistemas. En este orden de ideas, el propósito de este trabajo está orientado al modelamiento teórico de estas redes por medio de herramientas físicas así como la comprobación empírica de estos modelos al aplicarlos a problemas computacionales reales.
+La inteligencia artificial es uno de los temas que han fascinado a la humanidad desde el desarrollo de la computación. Ésta ha sido tema recurrente de muchas de las historias modernas de ciencia ficción, y con los avances de la tecnología moderna en términos de poder computacional, esta idea se hace cada vez más palpable. Es por esto que la inteligencia artificial Multivac de Asimov es un personaje recurrente en sus grandiosos cuentos futuristas \cite{Asimov}.\\
+
+Uno de los aspectos de la inteligencia artificial que está al alcance de nuestras manos hoy en día, es el aprendizaje de máquinas, más conocido como Machine Learning. Éste hace referencia a la capacidad de las máquinas para aprender a enfrentarse a ciertos problemas sin ser específicamente programadas para ello. Ésto se logra por una variación de sus parámetros en lo que se conoce como aprendizaje supervisado (Supervised Learning), en donde se tiene una función de fitness o verosimilitud que indica qué tan acertado es el enfoque de la máquina al problema. Con varios intentos en el proceso de aprendizaje, la máquina puede calcular el gradiente aproximado de dicho fitness respecto a sus parámetros y modificarlos de tal manera que se optimice dicha función \cite{deepNature}. Así, si se entrena la máquina con un conjunto de datos conocidos, esta optimizará sus parámetros para poder enfrentarse a problemas nuevos de manera óptima.\\
+
+Las dificultades de la programación de una inteligencia artificial se hacen claras al intentar programar, por ejemplo, un identificador de números en una imagen \cite{neuralOnline}. Lo que parece muy intuitivo para nosotros, como la identificación de curvas, contornos, intersecciones, etc. se vuelve un poco complicado al intentar expresarlo en un programa. De repente nos encontramos intentando clasificar casos, que en general son muy numerosos y harían el código muy ineficiente. De esta manera, deducimos que nuestra red neuronal, compuesta de diferentes capas de neuronas relacionadas entre sí, es óptima para enfrentarse a estos problemas, por esto uno de los abordajes más exitosos para Machine Learning reside en la mímica computacional de las redes neuronales biológicas. De esta manera se pueden crear redes neruonales artificiales que procesen la información de imágenes para identificar objetos, rostros, animales, etc. Incluso, se pueden programar para que éstas aprendan a jugar videojuegos y más \cite{statisticNeurons}. Fue de esta manera que se pudo crear una inteligencia artificial capaz de jugar Go y de vencer al campeón mundial.\\
+
+A grandes rasgos, una neurona puede verse como un nodo que se activa o no dependiendo de unos estímulos de entrada. Computacionalmente esto se puede traducir a un output binario que se da como consecuencia de la aplicación de cierta función a unos inputs binarios. Los parámetros de dicha función serían los optimizados por el proceso de Supervised Learning. Teniendo esto en cuenta, una red de neuronas se forma al tomar como input de unas neuronas, el output de otras, formando así diferentes capas de procesamiento.\\
+
+Lo curioso de estas redes neuronales es que son extremadamente eficientes al enfrentarse a ciertos problemas a pesar de que no se conoce muy bien el mecanismo de su éxito. Se sabe que ciertos diseños de redes funcionan de manera óptima para ciertos problemas, pero estas son conclusiones obtenidas heurísticamente. De esta manera, resulta importante poder cuantificar el proceso de aprendizaje de una neurona para monitorear su proceso de aprendizaje y poder obtener conclusiones de su mecanismo. Ya es conocido que muchas analogías de la mecánica estadística puede ser aplicadas al funcionamiento de las redes neuronales artificiales \cite{cheapLearning} y de esta manera se puede entender a grandes rasgos por qué funcionan al enfrentarse a problemas tan generales. De la misma manera, hay modelos estadísticos sobre redes neuronales biológicas \cite{biology}, que pueden ser usados análogamente para modelar redes neuronales artificiales.\\
+
+Consecuentemente, el objetivo de este proyecto de grado está en el estudio de modelos teóricos sobre redes neuronales artificiales para poder obtener conclusiones sobre el mecanismo de su éxito y verificarlo y aplicarlo a redes neruronales artificiales enfrentándose a problemas reales.\\
 
 \section{Objetivos Generales}
 
 %Objetivo general del trabajo. Empieza con un verbo en infinitivo.
 
-Estudiar el comportamiento de aprendizaje de las redes neuronales desde un enfoque físico para verificar si su mecanismo puede ser cuantificable de antemano.
+Estudiar el comportamiento de las redes neuronales desde un enfoque físico para verificar si el mecanismo de su aprendizaje es verificable por medio de modelos teóricos.
 
 \section{Objetivos Específicos}
 
@@ -56,8 +66,9 @@ Estudiar el comportamiento de aprendizaje de las redes neuronales desde un enfoq
 	\item Desarrollar redes neuronales simples para familiarizarse con su diseño
 	\item Estudiar a fondo las técnicas computacionales de diseño de redes neuronales, así como los problemas técnicos a los que se pueden enfrentar
 	\item Elegir entre las diferentes aplicaciones de redes neuronales una que sea versátil para el estudio de los modelos físicos asociados
-	\item Estudiar qué posibles modelos físicos pueden ser aplicados a la red neuronal elegida para poder obtener conclusiones acerca de su funcionamiento
-	\item Verificar si las conclusiones de funcionamiento en la red anterior pueden ser ampliadas a otras redes
+	\item Estudiar qué posibles modelos físicos y estadísticos pueden ser aplicados a la red neuronal elegida para poder obtener conclusiones acerca de su funcionamiento
+	\item Verificar las aplicaciones de estos modelos sobre la red elegida.
+	\item Verificar la generalización de estos modelos para redes neuronales con diseños diferentes
 \end{itemize}
 
 \section{Metodología}
@@ -119,10 +130,9 @@ La metodología propuesta tiene un componente computacional fuerte relacionado co
 %Nombres de por lo menos 3 profesores que conozcan del tema. Uno de ellos debe ser profesor de planta de la Universidad de los Andes.
 
 \begin{itemize}
-	\item Nombre de profesor 1 (Instituto o Universidad de afiliaci\'on 1)
-	\item Nombre de profesor 2 (Instituto o Universidad de afiliaci\'on 2)
-	\item Nombre de profesor 3 (Instituto o Universidad de afiliaci\'on 3)
-	\item ...
+	\item Juan Manuel Pedraza (Universidad de los Andes)
+	\item Alonso Botero (Universidad de los Andes)
+	\item Juan Gabriel Ramírez (Universidad de los Andes)
 \end{itemize}
 
 
