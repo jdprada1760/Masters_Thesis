@@ -15,7 +15,7 @@
 
 \begin{center}
 \Huge
-Dark matter halo shapes in the AURIGA Milkiway-like simulations
+Dark matter halo shapes in the AURIGA Milkiway-like galaxy simulations
 
 \vspace{3mm}
 \Large Jesus David Prada Gonzalez
@@ -40,40 +40,39 @@ Coadvisor: Volker Springel
 
 %Introducción a la propuesta de Monografía. Debe incluir un breve resumen del estado del arte del problema a tratar. También deben aparecer citadas todas las referencias de la bibliografía (a menos de que se citen más adelante, en los objetivos o metodología, por ejemplo)
 
-Nowadays, the nature of Dark Matter (DM) remains unknown and is one of the biggest puzzles to understand the fundamentals that constitute our universe. As it is assumed by the nature of its discovery that it does not posses electromagnetic interactions, observing DM directly is practically impossible. However, due to its strong gravitational effect on the surrounding vissible matter, (acceleration curves, weak lensing), its presence can be sensed and furthermore, its density field can be constrained.\\
+Nowadays, the esence of Dark Matter (DM) remains unknown and is one of the biggest puzzles needed to understand the fundamentals that constitute our universe. As it is assumed by the nature of its discovery that it does not posses electromagnetic interactions, observing DM directly is practically impossible. However, due to its strong gravitational effect on the surrounding vissible matter, (acceleration curves, weak lensing), its presence can be sensed and furthermore, its density field can be constrained.\\
 
-In this context, it is of much interest to probe the density field of the DM that clusters (DM halo) around the Milkyway as it can shed light in this fundamental puzzle having implications in many areas of physics. Specifically, the complete density field of the DM halo of our host galaxy is strong evidence to deduce many features of its formation history and evolution.\\
+In this context, it is of much interest to probe the density field of the DM that clusters (DM halo) around the Milkyway as it can shed light in this fundamental enigma and it may have implications in many areas of physics. Specifically, the complete density field of the DM halo of our host galaxy is strong evidence to deduce many features of its formation history and evolution.\\
 
-Many methods have been developed to constraint the shape of the Milkyway's DM halo, ranging from the use of Jean's equations \cite{Loebman et al. 2012} to the satellite systems such as the Sagittarius stream and the Large Magellanic Cloud \cite{Vera-Ciro et al 2013, Deg & Widrow 2012, Law & Majewski 2010}. However, due to the difficulty in the observation of some specific sensitive details of our galaxy and its surrounding systems, many assumptions have to be done over these models, producing considerably different results between each other. Then, it is safe to say that the constraints on the density field of the DM halo of the Milkyway is still an open research topic in astronomy. \\
+Many methods have been developed to constrain the shape of the Milkyway's DM halo, ranging from the use of Jean's equations \cite{Loebman et al. 2012} to the satellite systems such as the Sagittarius stream and the Large Magellanic Cloud \cite{Vera-Ciro et al 2013, Deg & Widrow 2012, Law & Majewski 2010}. However, due to the difficulty in the observation of some specific sensitive details of our galaxy and its surrounding systems, many assumptions have to be done over these models, producing considerably different results between each other. Then, it is safe to say that the constraints on the density field of the DM halo of the Milkyway is still an open research topic in astronomy. \\
 
-Recently, with the growth of computational power and the improvement of numerical models, the performance and further study of realistic simulations which trace the non-linear interactions of DM and baryonic components has been possible \cite{illustris,auriga,aquarius}. These simulations can reproduce important features of our observable universe in a wide range of scales, from the cosmic star formation rate density and galaxy luminosity function in cosmological simulations as \cite{Illustris} to more specific features of Milkyway-type galaxies \cite{auriga,aquarius} such as its stellar mass, rotation curves, star formation rates and metallicities. These simulations are an important field of study that complements observations and theory due to its freedom and control over the state of the systems and its observables.\\
+Recently, with the growth of computational power and the improvement of numerical models, the performance and further study of realistic simulations which trace the non-linear interactions of DM and baryonic components has been possible \cite{illustris,auriga,aquarius}. These simulations can reproduce important features of our observable universe in a wide range of scales, from the cosmic star formation rate density and galaxy luminosity function in cosmological simulations as Illustris \cite{Illustris} to more specific features of Milkyway-type galaxies in AURIGA and AQUARIUS \cite{auriga,aquarius} such as their stellar masses, rotation curves, star formation rates and metallicities. These simulations are an important field of study that complements observations and theory due to its freedom and control over the state of the systems and its observables.\\
 
 In this context, the analysis of realistic Milkyway-like galaxies, which has only been possible until very recently \cite{aquarius}, is of great importance to complement and perhaps give clues about details to have into account when probing the DM density field in observations regarding our galaxy. However, realistically reproducing the features of our Miklyway galaxy is not an easy task. It requires producing the correct initial conditions and not only having a sophisticated full-physics model to reproduce observables, but to very carefully tune the free parameters of these models such as the ones associated to the many dissipation and feedback processes of baryonic matter.\\
 
-This is why, before the arrival of realistic Milkyway-like simulations such as Aquarius, there was a generation of DM-only simulations which used the final state of the evolution of DM to reproduce the statistical features of the observable universe. These type of simulations have substantial information to analyze in this field of study, but may be biased in aspects regarding the historical relation between DM and baryonic matter, such as the main question related to the probe of our galaxy's DM density field. The task of incorporating baryonic matter in these type of simmulations is in fact so difficult that, even with the most correct prescriptions of that date, Aquarius is a set of just six Milkyway-like galaxies. This can make any study performed on these simulations of low statistical significance.\\
+This is why, before the arrival of realistic Milkyway-like simulations such as Aquarius, there was a generation of DM-only simulations which used the final state of the evolution of DM to reproduce, via semi-analytical models, the statistical features of the observable universe. These type of simulations have substantial information to analyze in this field of study, but may be biased in aspects regarding the historical relation between DM and baryonic matter, such as the question of our galaxy's DM density field /cite{relation DM baryons is important}. The task of incorporating baryonic matter in these simmulations is in fact so difficult that, even with the most correct prescriptions of that date, Aquarius is a set of just six Milkyway-like galaxies, which can make any study performed on it of low statistical significance.\\
 
-More recently, with the deveolpment of the latest and most accurate hydrodynamical code AREPO \cite{arepo} and the improvements of the physical numerial models regarding baryons, it has been possible the simulation of thirty Milkyway-like galaxies in the project AURIGA \cite{auriga}. This code AREPO conciles the advantages and solves the flaws of the two paradigms of cosmology-oriented numerical hydrodynacs models namely Smoothed Particle Hydrodynamics (SPH) and Eulerian hydrodynamics with Adaptative Mesh Refinement (AMR). Furthermore, it can simulate magnetic fields, which is a novel feature in this type of simulations.\\
+More recently, with the deveolpment of the latest and most accurate hydrodynamical code AREPO \cite{arepo} and the improvements of the physical numerial models regarding baryons, it has been possible the simulation of thirty Milkyway-like galaxies in the project AURIGA \cite{auriga}. This code AREPO conciles the advantages and solves the flaws of the two paradigms of cosmology-oriented numerical hydrodynacs models namely Smoothed Particle Hydrodynamics (SPH) and Eulerian hydrodynamics with Adaptative Mesh Refinement (AMR). Furthermore, it can simulate magnetic fields, which is a novel feature in this type of simulations. Therefore, it becomes clear that the study of the DM density field on these simulations may produce a more complete insight when performed on these simulations due to the statistical significance of the sample which is also strong evidence of the big improvements of the baryonic physics models.\\
 
-The objective of this monography would be then to use the results of the AURIGA project to study the halo density field of these thirty galaxies and obtaining statistically significant results, compare our study with state-of-the-art observations. Specifically, we will study the shape of the DM halo in terms of its radius and its history according to the guidelines stablished in a previous and similar study over the Aquarius simulations by Vera-Ciro et al \cite{Vera-Ciro et al 2011}.
+The principal objective of this monography is then to use the results of the AURIGA project to study the halo density field of these thirty galaxies obtaining statistically significant results which can then be compared to the state-of-the-art observations. Specifically, we will study the shape of the DM halo in function of its radius and its history according to the guidelines stablished in a previous and similar study over the Aquarius simulations by Vera-Ciro et al \cite{Vera-Ciro et al 2011}, in order obtain a better understanding about the relation between DM and visible matter in Milkyway-like galaxies and how can it be extrapolated to the observational field of study.\\
 
 
 \section{Objetivos Generales}
 
 %Objetivo general del trabajo. Empieza con un verbo en infinitivo.
 
-Estudiar el comportamiento de las redes neuronales desde un enfoque físico para verificar si el mecanismo de su aprendizaje es verificable por medio de modelos teóricos.
+Obtain the shape of the principal DM haloes in the AURIGA simulations in terms of the radius and the history of the galaxy.
 
 \section{Objetivos Específicos}
 
 %Objetivos específicos del trabajo. Empiezan con un verbo en infinitivo.
 
 \begin{itemize}
-	\item Desarrollar redes neuronales simples para familiarizarse con su diseño
-	\item Estudiar a fondo las técnicas computacionales de diseño de redes neuronales, así como los problemas técnicos a los que se pueden enfrentar
-	\item Elegir entre las diferentes aplicaciones de redes neuronales una que sea versátil para el estudio de los modelos físicos asociados
-	\item Estudiar qué posibles modelos físicos y estadísticos pueden ser aplicados a la red neuronal elegida para poder obtener conclusiones acerca de su funcionamiento
-	\item Verificar las aplicaciones de estos modelos sobre la red elegida.
-	\item Verificar la generalización de estos modelos para redes neuronales con diseños diferentes
+	\item Compare the results of the halo shapes between the DM-only simulations with that of the full-physics simulations
+
+	\item Study and understand the effect that the presence of visible matter exerts in the shape of the DM haloes in Milkyway-like galaxy simulations.
+	\item Study and understand the relation of the final shape of the DM halo with respect to its historical shape.
+	\item Compare our future results with the state-of-the-art observations that constrain the shape of the Milkyway's DM halo.
 \end{itemize}
 
 \section{Metodología}
@@ -84,9 +83,9 @@ Estudiar el comportamiento de las redes neuronales desde un enfoque físico para 
 
 %Monografía experimental: Recordar que para ser aprobada, los aparatos e insumos experimentales que se usarán en la Monografía deben estar previamente disponibles en la Universidad, o garantizar su disponibilidad para el tiempo en el que se realizará la misma. ¿Qué montajes experimentales se van a usar y que material se requiere? ¿En qué espacio físico se llevarán a cabo los experimentos? Si se usan aparatos externos, ¿qué permisos se necesitan? Si hay que realizar pagos a terceros, ¿cómo se financiará esto?
 
-El estudiante realizará la investigación y el desarrollo de los temas individualmente, con el apoyo periódico del director por medio de las reuniones del grupo de Astrofísica. En estas obtendrá retroalimentación del desarrollo de su trabajo y se decidirá si en algún momento requiere de mayor asesoría por parte del director.\\
+The student will perform the mentioned research individually with the periodic (semanal) support of his advisors through in-person meetings in the Astrophysics group when possible or electronic message interchange otherwise. In these meetings the student will obtain feedback of his work development and it will be decided if more time is necessary to discuss the partial results.\\
 
-La metodología propuesta tiene un componente computacional fuerte relacionado con el desarrollo de varias redes neuronales y el monitoreo de su proceso de aprendizaje para la verificación de las conclusiones teóricas a obtener. A lo sumo, para agilizar los procesos de cómputo, se necesitará acceso al Cluster. Para el desarrollo de la parte teórica será necesaria la revisión de bibliografía especializada sobre el tema. \\
+The proposed methodology has a strong computational component related to the analysis of high resolution galaxy simulations. The student has access to the computational cluster at Heidelberg's Institute of Theoretical Studies (HITS) where the information of these simulations reside, and will need at most acces to the Uniandes computational cluster. Furthermore, the revision of specialized bibliography is indispensable.\\
 
 
 \section{Cronograma}
