@@ -15,7 +15,7 @@
 
 \begin{center}
 \Huge
-Dark matter halo shapes in the Auriga Milky way-like galaxy simulations
+The Expected Shape of the Milky Way's Dark Matter Halo
 
 \vspace{3mm}
 \Large Jesus David Prada Gonzalez
@@ -67,39 +67,14 @@ This code has been used to perform simulations of large scale structure in the \
 \emph{Auriga Project} \cite{auriga} simulates 30 galaxies that reproduce the main Milky Way features such as their stellar masses, rotation curves, star formation rates and metallicities.
 
 For this thesis we will use the results from Auriga project \cite{auriga} to study the halo density field of the 30 simulated galaxies.
-Specifically, we will focus on measuring shape of the DM halo as a function of its radius and its history.
-We will follow to the guidelines stablished in a previous study over the Aquarius simulations by Vera-Ciro et al. \cite{Vera-Ciro2011}. 
-Studies of the DM density field like this have not been carried out yet on this nouvelle project Auriga.
-This represents one of the strongest motivations of this monograph.
-
-In this context, the analysis of realistic simulations of MW-like galaxies is of great importance to observational astronomy. 
-These simulations have only been possible until very recently \cite{aquarius} and can support the proces of probing the DM halo shape in observations regarding our galaxy.
-However, realistically reproducing the features of our MW galaxy is not an easy task. 
-It requires producing the correct initial conditions and not only having a sophisticated full-physics model to reproduce observables and a powerful computer, but to very carefully tune the free parameters of these models. 
-These free parameters are associated to the many dissipation and feedback processes of baryonic matter.
-A bad tunning of these parameters may produce observables which are not comparable to the observational data.\\
-
-
-These are the reasons why, before the arrival of realistic MW-like simulations such as Aquarius \cite{aquarius}, there was a generation of DM-only simulations.
-These simulations used the final state of the evolution of DM to reproduce, via semi-analytical models, the statistical features of the observable universe. 
-This type of simulations have substantial information to work with, but may be biased in aspects regarding the historical relation between DM and baryonic matter.
-This is an important aspect to have into account when studying our galaxy's DM density field \cite{Bryan2012}.
-The task of incorporating baryonic matter in these simulations is very difficult.
-Even with the most correct prescriptions of that date, Aquarius is a recent set of just six MW-like galaxies.
-This can make any study performed on it of low statistical significance.\\
-
-More recently, it has been developed the latest and most accurate hydrodynamical code AREPO \cite{arepo}. 
-This code comes with associated improvements of the physical numerial models regarding baryons. 
-The code AREPO reconciles the advantages and solves the flaws of the two paradigms of cosmology-oriented numerical hydrodynamics models, namely Smoothed Particle Hydrodynamics (SPH) and Eulerian hydrodynamics with Adaptive Mesh Refinement (AMR). 
-Furthermore, its associated physics models can simulate magnetic fields, which is a novel feature in computational astrophysics. 
-With these state-of-the-art tools it has been possible the simulation of thirty MW-like galaxies in the project Auriga \cite{auriga}.
-Therefore, it becomes clear that the study of the DM density field on the simulations of this project may produce a more complete insight due to the statistical significance of the sample.
-%The size of this set of galaxies is also strong evidence of the accuracy of the baryonic physics models and its corresponding code.\\
-\\
-
-
-Hopefully, with this study we can elucidate some aspects about the history and relation of baryonic matter and DM in MW-like galaxies.
-These aspects can then be extrapolated to the observational field of study, contributing in this way with our grain of sand in the transcendental enigma that DM represents to modern physics.\\
+Specifically, we will measure the shape of the DM halo as a function of its radius and its time evolution.
+We will follow the methods presented in a study of the simulation project that preceeded the Auriga Project over 5 year ago \cite{Vera-Ciro2011} that simulated 5 times less galaxies, without any hydrodynamics and at a lower numerical resolution.. 
+This is the first time that studies of the DM density field are performed with this level of realism.
+It is of great importance that simulations in the \emph{Auriga Project} were performed with different hydrodynamical characteristics 
+which allows us to measure the impact of such differences on the DM halo shape.
+The results from our study will help to constrain the expected DM density distribution around our galaxy, 
+providing a benchmark for all researchers interested in a better understanding of our Galaxy and its 
+dark matter distribution.
 
 
 
@@ -108,17 +83,16 @@ These aspects can then be extrapolated to the observational field of study, cont
 
 %Objetivo general del trabajo. Empieza con un verbo en infinitivo.
 
-Study the distribution of DM in MW-like galaxies.
+Study the DM distribution around MW-like galaxies.
 
 \section{Specific objectives}
 
 %Objetivos específicos del trabajo. Empiezan con un verbo en infinitivo.
 
 \begin{itemize}
-	\item Study of the distribution of DM in full-physics state-of-the art simulations.
+	\item Measure the shape of the DM halo in simulations from the \emph{Auriga Project}.
 
-	\item Study how the presence of gas affects the distribution of DM in full-physics simulations.
-	
+	\item Measure the different results in the DM halo shape for different degrees of realism in the hydrodynamical implementation.	
 \end{itemize}
 
 \section{Methodology}
