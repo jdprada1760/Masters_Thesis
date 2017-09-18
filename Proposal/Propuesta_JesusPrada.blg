@@ -3,46 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Propuesta_JesusPrada.aux
 The style file: unsrt.bst
 Database file #1: Bibliography.bib
-Warning--I didn't find a database entry for "LACEGAL"
-You've used 9 entries,
+Warning--entry type for "LACEGAL" isn't style-file defined
+--line 288 of file Bibliography.bib
+You've used 17 entries,
             1791 wiz_defined-function locations,
-            509 strings with 5428 characters,
-and the built_in function-call counts, 2392 in all, are:
-= -- 183
-> -- 155
+            556 strings with 6851 characters,
+and the built_in function-call counts, 4400 in all, are:
+= -- 334
+> -- 287
 < -- 0
-+ -- 55
-- -- 46
-* -- 214
-:= -- 414
-add.period$ -- 27
-call.type$ -- 9
-change.case$ -- 9
++ -- 102
+- -- 85
+* -- 394
+:= -- 749
+add.period$ -- 49
+call.type$ -- 17
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 81
-empty$ -- 206
-format.name$ -- 46
-if$ -- 505
+cite$ -- 17
+duplicate$ -- 149
+empty$ -- 387
+format.name$ -- 85
+if$ -- 936
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 9
-newline$ -- 48
-num.names$ -- 9
-pop$ -- 9
+int.to.str$ -- 17
+missing$ -- 16
+newline$ -- 86
+num.names$ -- 16
+pop$ -- 24
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 30
+skip$ -- 56
 stack$ -- 0
-substring$ -- 180
-swap$ -- 9
+substring$ -- 324
+swap$ -- 17
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 18
-width$ -- 10
-write$ -- 101
+while$ -- 32
+width$ -- 19
+write$ -- 184
 (There was 1 warning)

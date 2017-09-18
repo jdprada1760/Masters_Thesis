@@ -1,8 +1,36 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Nipoti}
+C.~{Nipoti}, P.~{Londrillo}, H.~{Zhao}, and L.~{Ciotti}.
+\newblock {Vertical dynamics of disc galaxies in modified Newtonian dynamics}.
+\newblock {\em MNRAS}, 379:597--604, August 2007.
+
+\bibitem{ReadMoore}
+J.~I. Read and Ben Moore.
+\newblock Tidal streams in a mond potential: constraints from sagittarius.
+\newblock {\em MNRAS}, 361(3):971--976, 2005.
+
+\bibitem{Read1}
+J.~I. Read, G.~Lake, O.~Agertz, and Victor~P. Debattista.
+\newblock Thin, thick and dark discs in Λcdm.
+\newblock {\em MNRAS}, 389(3):1041--1057, 2008.
+
+\bibitem{Read2}
+J.I. {Read}, L.~{Mayer}, A.M. {Brooks}, F.~{Governato}, and G.~{Lake}.
+\newblock {A dark matter disc in three cosmological simulations of Milky Way
+  mass galaxies}.
+\newblock {\em MNRAS}, 397:44--51, July 2009.
+
+\bibitem{Vera-Ciro2011}
+C.A. {Vera-Ciro}, L.V. {Sales}, A.~{Helmi}, C.S. {Frenk}, J.F. {Navarro},
+  V.~{Springel}, M.~{Vogelsberger}, and S.D.M. {White}.
+\newblock {The shape of dark matter haloes in the Aquarius simulations:
+  evolution and memory}.
+\newblock {\em MNRAS}, 416:1377--1391, September 2011.
 
 \bibitem{Loebman2012}
-S.~R. {Loebman}, {v Z}. {Ivezi{c}}, T.~R. {Quinn}, F.~{Governato}, A.~M.
-  {Brooks}, C.~R. {Christensen}, and M.~{Juri{c}}.
+S.R. {Loebman}, {v Z}. {Ivezi{c}}, T.R. {Quinn}, F.~{Governato}, A.M. {Brooks},
+  C.R. {Christensen}, and M.~{Juri{c}}.
 \newblock {Constraints on the Shape of the Milky Way Dark Matter Halo from
   Jeans Equations Applied to Sloan Digital Sky Survey Data}.
 \newblock {\em APJL}, 758:L23, October 2012.
@@ -24,6 +52,33 @@ D.~R. {Law} and S.~R. {Majewski}.
   Milky Way Halo}.
 \newblock {\em APJ}, 714:229--254, May 2010.
 
+\bibitem{prove}
+A.~D. {Ludlow}, A.~{Ben{{\i}}tez-Llambay}, M.~{Schaller}, T.~{Theuns}, C.~S.
+  {Frenk}, R.~{Bower}, J.~{Schaye}, R.~A. {Crain}, J.~F. {Navarro},
+  A.~{Fattahi}, and K.~A. {Oman}.
+\newblock {Mass-Discrepancy Acceleration Relation: A Natural Outcome of Galaxy
+  Formation in Cold Dark Matter Halos}.
+\newblock {\em Physical Review Letters}, 118(16):161103, April 2017.
+
+\bibitem{bardeen}
+J.~M. {Bardeen}, J.~R. {Bond}, N.~{Kaiser}, and A.~S. {Szalay}.
+\newblock {The statistics of peaks of Gaussian random fields}.
+\newblock {\em APJ}, 304:15--61, May 1986.
+
+\bibitem{Illustris2}
+M.~{Vogelsberger}, S.~{Genel}, V.~{Springel}, P.~{Torrey}, D.~{Sijacki},
+  D.~{Xu}, G.~{Snyder}, D.~{Nelson}, and L.~{Hernquist}.
+\newblock {Introducing the Illustris Project: simulating the coevolution of
+  dark and visible matter in the Universe}.
+\newblock {\em MNRAS}, 444:1518--1547, October 2014.
+
+\bibitem{auriga}
+R.~J.~J. {Grand}, F.~A. {G{o}mez}, F.~{Marinacci}, R.~{Pakmor}, V.~{Springel},
+  D.~J.~R. {Campbell}, C.~S. {Frenk}, A.~{Jenkins}, and S.~D.~M. {White}.
+\newblock {The Auriga Project: the properties and formation mechanisms of disc
+  galaxies across cosmic time}.
+\newblock {\em MNRAS}, 467:179--207, May 2017.
+
 \bibitem{aquarius}
 V.~{Springel}, J.~{Wang}, M.~{Vogelsberger}, A.~{Ludlow}, A.~{Jenkins},
   A.~{Helmi}, J.~F. {Navarro}, C.~S. {Frenk}, and S.~D.~M. {White}.
@@ -42,19 +97,7 @@ V.~{Springel}.
   simulations on a moving mesh}.
 \newblock {\em MNRAS}, 401:791--851, January 2010.
 
-\bibitem{Auriga}
-R.~J.~J. {Grand}, F.~A. {G{\'o}mez}, F.~{Marinacci}, R.~{Pakmor},
-  V.~{Springel}, D.~J.~R. {Campbell}, C.~S. {Frenk}, A.~{Jenkins}, and S.~D.~M.
-  {White}.
-\newblock {The Auriga Project: the properties and formation mechanisms of disc
-  galaxies across cosmic time}.
-\newblock {\em MNRAS}, 467:179--207, May 2017.
-
-\bibitem{Vera-Ciro2011}
-C.~A. {Vera-Ciro}, L.~V. {Sales}, A.~{Helmi}, C.~S. {Frenk}, J.~F. {Navarro},
-  V.~{Springel}, M.~{Vogelsberger}, and S.~D.~M. {White}.
-\newblock {The shape of dark matter haloes in the Aquarius simulations:
-  evolution and memory}.
-\newblock {\em MNRAS}, 416:1377--1391, September 2011.
+\bibitem{LACEGAL}
+Lacegal latinamerican chinese european galaxy formation network., 2017.
 
 \end{thebibliography}
