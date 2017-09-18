@@ -1,83 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Propuesta_JesusPrada.aux
-White space in argument---line 19 of file Propuesta_JesusPrada.aux
- : \citation{Loebman
- :                   et al. 2012}
-I'm skipping whatever remains of this command
-White space in argument---line 20 of file Propuesta_JesusPrada.aux
- : \citation{Vera-Ciro
- :                     et al 2013}
-I'm skipping whatever remains of this command
-White space in argument---line 21 of file Propuesta_JesusPrada.aux
- : \citation{Deg
- :               & Widrow 2012}
-I'm skipping whatever remains of this command
-White space in argument---line 22 of file Propuesta_JesusPrada.aux
- : \citation{Law
- :               & Majewski 2010}
-I'm skipping whatever remains of this command
-White space in argument---line 26 of file Propuesta_JesusPrada.aux
- : \citation{relation
- :                    DM baryons is important}
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys AURIGA and auriga
----line 29 of file Propuesta_JesusPrada.aux
- : \citation{AURIGA
- :                 }
-I'm skipping whatever remains of this command
-White space in argument---line 30 of file Propuesta_JesusPrada.aux
- : \citation{Vera-Ciro
- :                     et al 2011}
-I'm skipping whatever remains of this command
 The style file: unsrt.bst
 Database file #1: Bibliography.bib
-I was expecting a `,' or a `}'---line 1 of file Bibliography.bib
- : @article{Loebman 
- :                  et al. 2012,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "aquarius"
-Warning--I didn't find a database entry for "arepo"
-Warning--I didn't find a database entry for "auriga"
-You've used 0 entries,
+Warning--I didn't find a database entry for "LACEGAL"
+You've used 9 entries,
             1791 wiz_defined-function locations,
-            448 strings with 3569 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
+            509 strings with 5428 characters,
+and the built_in function-call counts, 2392 in all, are:
+= -- 183
+> -- 155
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 55
+- -- 46
+* -- 214
+:= -- 414
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 9
+duplicate$ -- 81
+empty$ -- 206
+format.name$ -- 46
+if$ -- 505
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 9
+missing$ -- 9
+newline$ -- 48
+num.names$ -- 9
+pop$ -- 9
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 30
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 180
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There were 8 error messages)
+while$ -- 18
+width$ -- 10
+write$ -- 101
+(There was 1 warning)
