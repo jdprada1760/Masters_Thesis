@@ -44,11 +44,13 @@ A complete physical picture of Dark Matter (DM) is still missing.
 This is one of the biggest puzzles to fully understand the composition of our Universe.
 So far, its presence can only be measured through its gravitational effect on the surrounding visible matter. 
 One of best the astronomical systems that can be used to probe DM on astronomical scales is our own galaxy: the Milky Way (MW).
-Probing the DM density field around our galaxy (it's so-called DM halo) can shed light on the nature of DM \cite{Nipoti,ReadMoore} and our galaxy's formation history \cite{Read1,Read2,Vera-Ciro2011}.\\
+Probing the DM density field around our galaxy (it's so-called DM halo) can shed light on the nature of DM \cite{Nipoti,ReadMoore} and our
+galaxy's formation history \cite{Read1,Read2,Vera-Ciro2011}.\\
 
 One of the most basic features that can be measured in the MW DM halo is its shape. 
 Different observational methods have been developed to constrain it. 
-They range from the use of Jean's equations applied to stellar kinematics \cite{Loebman2012} to modelling the dynamics of satellite systems such as the Sagittarius stream and the Large Magellanic Cloud \cite{Vera-Ciro2013,Deg2012,LawMajewski2010}. 
+They range from the use of Jean's equations applied to stellar kinematics \cite{Loebman2012} to modelling the dynamics of satellite
+systems such as the Sagittarius stream and the Large Magellanic Cloud \cite{Vera-Ciro2013,Deg2012,LawMajewski2010}. 
 However, different assumptions are made in these studies producing widely different results.
 Thus, constraining the density field of the DM halo of the Milky Way remains an open research topic in present-day astronomy.\\ 
 
@@ -60,18 +62,17 @@ Second, artifacts can appear due to the always limited numerical resolution.
 For these reasons, the study of simulations of astronomical or cosmological systems, as well as the research for reducing the aforementioned biases of computation, is an important field of study in modern astrophysics.\\
 
 Recently, the growth of computational power and the improvement of numerical models have made possible to perform realistic simulations.
-These simulations can trace both the non-linear interactions of DM and baryonic components. 
-They reproduce important features of our observable universe in a wide range of scales.
+These simulations can trace the non-linear interactions of DM and baryonic (i.e. usual gas and stars) components. 
 For instance, the recent development of an state-of-the-art simulation AREPO \cite{arepo} have made possible simulations that were considered impossible a decade ago.
-This code has been used to perform simulations of large scale structure in the \emph{Illustris Project} \cite{Illustris2}), while the 
-\emph{Auriga Project} \cite{auriga} simulates 30 galaxies that reproduce the main Milky Way features such as their stellar masses, rotation curves, star formation rates and metallicities.
+This code has been used to perform the \emph{Auriga Project} \cite{auriga}, which simulates 30 galaxies that reproduce the main Milky Way features such as their stellar masses, rotation curves, star formation rates and metallicities.
 
 For this thesis we will use the results from Auriga project \cite{auriga} to study the halo density field of the 30 simulated galaxies.
 Specifically, we will measure the shape of the DM halo as a function of its radius and its time evolution.
-We will follow the methods presented in a study of the simulation project that preceeded the Auriga Project over 5 year ago \cite{Vera-Ciro2011} that simulated 5 times less galaxies, without any hydrodynamics and at a lower numerical resolution.. 
+We will follow the methods presented in a study of the simulation project that preceeded the Auriga Project over 5 year ago \cite{Vera-Ciro2011} that simulated 5 times less galaxies, without any hydrodynamics and at a lower numerical resolution. 
 This is the first time that studies of the DM density field are performed with this level of realism.
-It is of great importance that simulations in the \emph{Auriga Project} were performed with different hydrodynamical characteristics 
-which allows us to measure the impact of such differences on the DM halo shape.
+The simulations in the \emph{Auriga Project} were performed with different hydrodynamical characteristics 
+which will also allow us to measure the impact of such differences on the DM halo shape.
+
 The results from our study will help to constrain the expected DM density distribution around our galaxy, 
 providing a benchmark for all researchers interested in a better understanding of our Galaxy and its 
 dark matter distribution.
@@ -92,7 +93,7 @@ Study the DM distribution around MW-like galaxies.
 \begin{itemize}
 	\item Measure the shape of the DM halo in simulations from the \emph{Auriga Project}.
 
-	\item Measure the different results in the DM halo shape for different degrees of realism in the hydrodynamical implementation.	
+	\item Measure the different results in the DM halo shape for different degrees of realism in the baryon physics.	
 \end{itemize}
 
 \section{Methodology}
@@ -103,22 +104,15 @@ Study the DM distribution around MW-like galaxies.
 
 %Monografía experimental: Recordar que para ser aprobada, los aparatos e insumos experimentales que se usarán en la Monografía deben estar previamente disponibles en la Universidad, o garantizar su disponibilidad para el tiempo en el que se realizará la misma. ¿Qué montajes experimentales se van a usar y que material se requiere? ¿En qué espacio físico se llevarán a cabo los experimentos? Si se usan aparatos externos, ¿qué permisos se necesitan? Si hay que realizar pagos a terceros, ¿cómo se financiará esto?
 
-The student will perform the mentioned research individually with the periodic (weekly) support of his advisors. This will be achieved through in-person meetings in the Astrophysics group or electronic message interchange. 
-In these meetings the student will obtain feedback about his work development and it will be decided if more time is necessary to discuss the partial results of this thesis. \\
+This project has a strong computational component related to the analysis of high resolution galaxy simulations from the \emph{Auriga Project}. 
+This will be done using the computational resources available both at the Heidelberg's Institute of Theoretical Studies (HITS) and Uniandes.
 
+The student visited HITS in the Summer 2017 where he worked for one month as an invited scientist to the Theoretical Astrophysics (TAP) led by Volker Springel. 
+Since July 2017 the student has access to the computational cluster at HITS where the information of these simulations is stored.
+The student will pay a second visit to HITS in December 2017 to work on this thesis.
+Those internships are sponsored by the Latinamerican Chinese European Galaxy Formation Network (LACEGAL) \cite{LACEGAL} funded by the European Union, whose one of its  co-PI is Jaime Forero at Uniandes.
 
-The student has visited  the Heidelberg's Institute of Theoretical Studies (HITS) where he worked for one month as an invited scientist.
-This internship was sponsored by the Latinamerican Chinese European Galaxy Formation Network (LACEGAL) \cite{LACEGAL}. 
-Specifically, the student worked with the Theoretical Astrophysics (TAP) group which was under the leadership of Volker Springel. 
-It was there where the main ideas of this project were born.
- Some other visits to HITS are planned during the course of this monograph with the objective of obtaining in-person feedback from the co-advisor. 
-These visits will also be fully funded by the LACEGAL project.\\
-
-The proposed methodology has a strong computational component related to the analysis of high resolution galaxy simulations. 
-The student has access, from his previously mentioned visit, to the computational cluster at HITS where the information of these simulations reside.
-He will at most need access to the Uniandes computational cluster.
-Furthermore, the revision of specialized bibliography is indispensable.\\
-
+Besides these internshipts in Germany, there will be weekly meetings with his advisors, either in person or virtually.
 
 \section{Cronogram}
 
