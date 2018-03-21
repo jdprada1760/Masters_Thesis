@@ -1,5 +1,5 @@
 \chapter{Remarks about our study}
-In this chapter we are going to describe in detail the specifications of the simulations we are going to work with, as well as the method for determining the halo shapes. This shapter is mainly to thoroughly explain how are we going to do everything that we are going to do.\\
+In this chapter describe in detail the specifications of the simulations we are going to work with. Furthermore, we present the chosen method for determining the halo shapes. This chapter is mainly to thoroughly explain how are we going to do everything that we are going to do.\\
 
 \section{The Auriga simulations}
 Cosmological simulations are restricted to modeling DM as a non collisional fluid and gas as an Eulerian(?) collisional fluid. Efficiently solving these systems of non-linear equations is an intrincate puzzle and it is still an open and improving field of research. 
@@ -20,16 +20,26 @@ Talk about the different degrees of realism in this simulation> DM, MHD, resolut
 \end{figure}
 
 \section{Determining the halo shape}
-Start saying that there is no unique method for determining the shape at a specific radius. In general this process is not trivial and there are many different(in theory) approaches which produce esentially the same results \cite{Vera-Ciro2010}. Mention that we are going to use method by Allgood et al 2006 \cite{AllGood2006} following the steps by Vera-Ciro2010.\\
+The discretization of the DM density field into particles difficults in some way some calculations that would require a more continuous distribution such as those related to the density field. The case of the shape of the halo is no exemption to this and there is no trivial way to calculate the DM halo shape at a determined radius. In reality, there are several ways to calculate the halo shape at a certain radius \cite{halo shapes}. They use different approaches like the use of an inertia tensor or the approximation to the respective contour surface, but in general, the results do not vary very much from each other \cite{Vera-Ciro et al. 2011}. In this work we follow the guidelines by Vera-Ciro et al 2011 which includes the use of the shape method by Allgood 2006\cite{AllGood2006}.\\
 
-The method starts with particles enclosed within a sphere, we calculate the reduced inertia tensor:
+This method starts with particles enclosed within a sphere whose radius $r$ is the initial radius where we want to obtain the shape. We calculate the reduced inertia tensor:
 
 \begin{equation}
 I_{ij} = \sum_k \frac{x_k^{(i)}x_k^{(j)}}{d^2_k},
 \label{eq:inertia}
 \end{equation}
 
-that is not sufficient, which is why we recalculate until we achieve convergence. Present this recalculation explicitly with a scale transformation which intuitively means that our ellipse is becoming a sphere under that transformation which at the end is fully consistent (find better words).
+which has weighted components so that each particle contribute with same importance neglecting their distance to the center of the halo.\\
+
+The diagonalization of this tensor yields the principal axes of the structure, as well as the eigen-quantities $a>b>c$ which produce the respective axial ratios. However, if we characterize an ellipsoid taking into account only particles enclosed within a sphere we are effectively underestimating its triaxiality \cite{AllGood}. For this reason, we iteratively recalculate the inertia tensor taking into account the previously characterized ellipsoid.\\
+
+AllGood et al. preffer to use the eigenvalues $a>b>c$ and their respective eigen-axes $v_a,v_b,v_c$ to calculate  inertia tensor over the particles enclosed by the ellipsoid with principal axes equal to $r,r/q,r/s$ where $q = b/a$ and $s=c/a$. In other words, we recalculate the inertia matrix by taking into account particles within an ellipsoid with axial ratios given by the previous diagonalization, maintaining the principal axis constant (this is a freedom choice).\\
+
+This method sounds good and it would eventually converge to a better characterization of the ellipsoid. However, we calculate the reduced inertia tensor by weighting the contributions with the spherical distance $d^2=x^2+y^2+z^2$, where particles within the same spherical surface are given the same importance. This means we are again underestimating ??? the triaxiality of the structure. For this reason, on each iteration we must calculated the inertia tensor taking into account an elliptic metric: $\bar{d}^2 = x^2+y^2/q^2+z^2/s^2$, assuming $x,y,z$ are the corresponding principal axes.\\
+
+But how do we know there are no more improvements? Present this method like calculating a sphere with iterative scale transforms, TO SUM UP. 
+  
+
 
 \begin{align}
 (x,y,z) &\rightarrow (x,y/q,z/s) \label{eq:scale}\\
