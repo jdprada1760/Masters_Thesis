@@ -5,10 +5,7 @@ In this chapter we are going to present our results. First some remarks about re
 \section{Analysis of convergence}
 One of the principal factors that may bias our study is the resolution of the simulations we work with. This is an indicator principally thought to analyze the numerical convergence of the methods used to solve the non-linear equations for matter, and give validity over the output results overall. However, resolution may also directly affect our procedure for calculating halo shapes through the reduction of particles taken into account to calculate the inertia tensor.\\
 
-To illustrate this, in figures \ref{fig:goodConvergenceDM,fig:goodConvergenceMHD} we compare the obtained halo shape at redshift 0 on level 3 and level 4 simulations for a halo in which resolution does not noticeably affect the results. In this case, we can say that there is good convergence of the studied quantities with very small numerical bias. However, this is not the case every simulated halo as they do not evolve similarly and some resolution-sensitive events may influence their history of formation. In this sense, in figures \ref{fig:badConvergenceDM,fig:badConvergenceMHD} we present one of the halos where resolution played the most appreciable role affecting the shape. In this case, although the difference is not extreme, it requires attention and a more careful analysis.\\
-
-For instance, by simple inspection, we notice that there is no apparent systematic way in which resolution affects the halo shape. That is, sometimes the halo appears rounder and some times it is affected towards a more triaxial shape. This is important for our study as we focus our efforts on the analysis of the halo triaxial properties. Incidentally, it is also notable that, even for the case of good convergence, there is still a remaining difference of shapes in the MHD simulations. This means that the effect of resolution is stronger for gas than for DM.  
-
+To illustrate this, in figures \ref{fig:goodConvergenceDM,fig:goodConvergenceMHD} we compare the obtained halo shape at redshift 0 on level 3 and level 4 simulations for a halo in which resolution does not noticeably affect the results. In this case, we can say that there is good convergence of the studied quantities with very small numerical bias. However, this is not the case every simulated halo as they do not evolve similarly and some resolution-sensitive events may influence their history of formation. By way of example, in figures \ref{fig:badConvergenceDM,fig:badConvergenceMHD} we present one of the halos where resolution played the most appreciable role affecting the shape. In this case, although the difference is not extreme, it requires attention and a more careful analysis.\\
 
 \begin{figure}[!ht]
   \centering
@@ -22,16 +19,19 @@ For instance, by simple inspection, we notice that there is no apparent systemat
 
 \begin{figure}[!ht]
   \centering
-  \subfloat[halo_21 MHD]{\includegraphics[width=0.5\columnwidth]{./pics/Convergence/halo21_DM_3Vs4_bad.png}\label{fig:badConvergenceDM}}
+  \subfloat[halo 21 MHD]{\includegraphics[width=0.5\columnwidth]{./pics/Convergence/halo21_DM_3Vs4_bad.png}\label{fig:badConvergenceDM}}
   \hfill
-  \subfloat[halo_23 DM]{\includegraphics[width=0.5\columnwidth]{./pics/Convergence/halo23_MHD_3Vs4_bad.png}\label{fig:badConvergenceMHD}}
+  \subfloat[halo 23 DM]{\includegraphics[width=0.5\columnwidth]{./pics/Convergence/halo23_MHD_3Vs4_bad.png}\label{fig:badConvergenceMHD}}
   \caption{Examples of halos where resolution had an appreciable effect on the halo shape. There is an appreciable difference between level 3 (blue) and level 4 (red) calculations. However it does not modify the halo's shape in any specific way. \textbf{put labels, bigger axes font, add title} }
 \end{figure}
 
 
-We decided to analyze de radial profiles at redshift 0 and compare level5 to level3 simulations. In general, the DM halo shapes remain unchanged with the exeption of the radial regimes where resolution becomes important. However, for MHD simulations, the resolution of gas affects the measurement not only in the inner parts, where resolution issues are evident, but it has a more global effect, presumably because of the scattering of particles which is also supporting the claim that matter affects the halo shape through scattering.\\
+For instance, by simple inspection, we notice that there is no apparent systematic way in which resolution affects the halo shape. That is, sometimes the halo appears rounder and some times it is affected towards a more triaxial shape. This is important for our study as we focus our efforts on the analysis of the halo triaxial properties. Incidentally, the DM-only simulated halo shapes remain in general unchanged with the exemption of the radial regimes where the number of particles naturally affects our shape-calculating method. However, for MHD simulations, the resolution of gas influences the measurement not only in the inner parts, where discretization issues are evident, but it has a more global effect. We suspect this is caused by the scattering of particles due to dense structures formed by gas, whose effect is affected by resolution. Nevertheless, further calculations need to be performed to confirm if these resolution biases are directly caused by AllGood's method for calculating shapes, or are caused because structures are indeed affected by numerical errors from the solution of fluid equations of matter.\\
 
-We address this problem by performing random sampling of the level3 simulations to reproduce level4 measurements and estimate the associated error.\\
+
+Consequently, we decided to isolate the few-particle effect on our shape calculations without recurring to the less-resoluted simulations of level 4. Taking into account that the resolution difference between level 3 and level 4 simulations is a factor of 8, we randomly selected particles from level 3 halos at redshift 0 to produce 10 samples of approximately the same size as level 4 simulations. We then proceeded to analyze the effect of lowering the number of particles on the calculated shape of the halo. In figures \ref{fig:convergenceMHD,fig:convergenceDM} we ploted the original level 3 shapes as well as the 10 level 3 samples. For each radius, we calculated the standard deviation of the sample shape and illustrated 3-sigma range to compare with the respective level 4 shape values.\\  
+
+From the graphics on \ref{fig:convergenceMHD,fig:convergenceDM}, it is clear that the plotted fractional difference is not actually big and remains under $1\%$ for the majority of the radial profile. It becomes important for radii less than $1Kpc$ due to lack of particles to obtain a good approximation of the elliptical shape. This is corroborated by the $3\sigma$ range, which becomes evident around $1Kpc$. The main conclusion of this convergence analysis is that for radii bigger than $1Kpc$, the differences of level 3 and level 4 ellipses cannot be explained as an effect of the lack of particles. This is a confirmation that all kinds of matter are directly affected by resolution due to precision-sensitive events on the history of formation or because the gravitational potential of matter itself is affected and continuously influences surrounding matter. Either way, even for the most resolution-biased cases, we can say that for the purposes of this study, convergence is achieved to a reasonable extent.\\  
 
 \begin{figure}[!ht]
   \centering
@@ -40,10 +40,6 @@ We address this problem by performing random sampling of the level3 simulations 
   \subfloat[halo 24 DM]{\includegraphics[width=0.5\columnwidth]{./pics/Convergence/rand_conv_halo24_MHD.png}\label{fig:convergenceDM}}
   \caption{Comparison of the effect of resolution on DM and MHD simualations. Here level4 curves (magenta) are compared to the mean and 2std (confirm) of the random-sampled curves from level3. For better comparison of the effect of resolution, the difference percent is plotted in green.  \textbf{bigger axes font}}
 \end{figure}
-
-
-
-State the main conclusions about this analysis of convergence. The effect of particle resolution does not sistematically affect the measurements. However, the error produced is specially apreciable at inner parts where for MHD it has a more global effect through scattering.\\
 
 Halo shape is heavily determined by accretion with environment \cite{shape relation with environment}. As environment may also be affected by resolution, this may have an effect on the halo shape. Also, resolution discrepancies may snowball through history.
 
