@@ -12,21 +12,7 @@ glass-like configuration in a periodic box of $106.5\text{Mpc}$. The $\Omega_\La
 
 These halos were randomly selected from a sample of the quartile of most isolated halos whose virial mass $M_200$ varied between $10^{12}M_\odot$ and $2\cdot 10^{12}M_\odot$. This mass is defined as the mass enclosed within the virial radius $R_{200}$ at which the density becomes 200 times the critical density of the universe. These halos were then re-simulated by increasing the mass resolution of the particles belonging to each halo and diminishing the resolution of the rest of the particles. This would efficiently simulate external gravitational effects over the studied structure and reproduce a high-resoluted version of it.\\
 
-Various versions of the same halo were simulated for different degrees of realism. All 30 halos were simulated within a level 4 degree of resolution defined for Aquarius simulations which corresponds to $\~ 2 000 000$ high resolution particles of $\~ 3 \cdot 10^5 M_\odot$. 
-
-$\Lambda \text{CDM}$ cosmology of this run follows:
-$\Omega_\Lambda=0.7274$, $\Omega_\text{m}=0.2726$,
-$\Omega_\text{b}=0.0456$, $\sigma_\text{s}=0.0809$,
-$\text{n}_\text{s}=0.963$ \& $\text{H}_0=70.4\text{kms} 
-^{-1}\text{Mpc}^{-1}$ which is consistent with the (last) Anisotropy
-Probe (WMAP)-9 \cite{AnisotropyProbe}. Illustris has a constant
-spatial resolution of $1.4\text{kpc}$ for DM particles in comoving
-units, and for baryonic particles it has the same spatial resolution
-of DM for $\text{z}\geq 1$, which is later modified to $0.7\text{kpc}$
-in physical units for the rest of the simulation. \\ 
-.  of mass $1<M_{200}/10^2M_\odot<2$  
-
-Talk about the different degrees of realism in this simulation> DM, MHD, resolution levels. State the importance of these aspects for the soundness (look better word) of the studies.\\
+Various versions of the same halo were simulated for different degrees of realism. All 30 halos were simulated within a level 4 degree of resolution defined for Aquarius simulations which corresponds to $\~ 2 000 000$ high resolution particles of $\~ 3 \cdot 10^5 M_\odot$. From these halos, 6 of them where re-simulated at level 3 (higher) resolution taking into account a spatial factor of 2 in each dimension. Furthermore, fore each halo in each level of resolution there are two versions of the simulation. One evolves only DM particles and the other has into account all the magneto-hydrodynamical physics. Taking this into account, we can compare the results from different levels of realism to obtain consistency in our analysis.\\ 
 
 \begin{figure}[!ht]
     \centering
@@ -34,6 +20,16 @@ Talk about the different degrees of realism in this simulation> DM, MHD, resolut
     \caption{Set of 30 MW-like simulations, taken from http://auriga.h-its.org/}
     \label{fig:auriga}
 \end{figure}
+
+
+These simulations were  performed using the hydrodynamic code AREPO
+\cite{Arepo}, which combines a moving Voronoi tessellation with the
+finite volume approach. In this way, AREPO solves the principal sources of nummerical errors from both important paradigms of computational hydrodynamics in the cosmological context. Parallel the evolution algorithm, there are
+galaxy formation models which account for the evolution of stars and
+SMBHs. Specifically, the physics followed by this model includes
+energetic feedback from supermassive black holes and supernovae, as
+well as stellar evolution and chemical enrichment. These models are consistent and do not need recalibration of parameters for each level of resolution.\\
+
 
 \section{Determining the halo shape}
 The discretization of the DM density field into particles makes it difficult  to perform some calculations that would require a more continuous distribution such as those related to the density field. The case of the shape of the halo is no exemption, and therefore there is no trivial way to calculate the DM halo shape at a determined radius. There are different approaches to this problem, such as the use of an inertia tensor or the approximation to the respective contour surface.
