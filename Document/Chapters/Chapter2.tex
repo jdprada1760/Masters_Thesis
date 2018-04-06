@@ -5,10 +5,26 @@ In this chapter describe in detail the specifications of the simulations we are 
 Cosmological simulations are restricted to modeling DM as a non collisional fluid and gas as an Eulerian(?) collisional fluid. Efficiently solving these systems of non-linear equations is an intricate puzzle and it is still an open and improving field of research. 
 Difficulties in the numerical modeling of these fluids arise from the wide range of values that quantities take in the context of cosmological objects, which can expand in several orders of magnitude, are no much different than actual field discontinuities which are very difficult to treat in a numerical way.\\
 
-It is clear that this simulations are limited to some resolution depending on the current power of computing super-clusters. This resolution is variable between simulations and is adjustable to the specific objective of the research. However, this resolution is by no means sufficient to simulate specific termic processes dominated by quantum or particle physics. However, specific details which are consequence of this non-modelable physics, are needed to accurately model cosmological structures. This is why energy and mass feedback processes such as supernovae (SN) explosions, black hole (BH) accretion and radiation, are usually reduced to some simplification dependent on some free parameters. A decade ago, thee feedback processes were not as well understood nor well modeled as they are today. For this reason, and the advances on technology, it has been possible only until recently the simulation of galactic-sized objects like our MW tracking the evolution of normal matter alongside with DM.\\
+It is clear that this simulations are limited to some resolution depending on the current power of computing super-clusters. This resolution is variable between simulations and is adjustable to the specific objective of the research. However, it is by no means sufficient to simulate specific termic processes dominated by quantum or particle physics. Nontheless, specific details which are consequence of this non-modelable physics, are needed to accurately model cosmological structures. This is why energy and mass feedback processes such as supernovae (SN) explosions, black hole (BH) accretion and radiation, are usually reduced to some simplification dependent on some free parameters. A decade ago, these feedback processes were not as well understood nor well modeled as they are today. For this reason, and the advances in technology, it has been possible only until recently the simulation of galactic-sized objects like our MW tracing the evolution of normal matter alongside with DM with exceptional accuracy \cite{Auriga}.\\
 
+In this monograph we use the results of the state-of-the art Auriga simulations \cite{Auriga}. It selected a set of 30 isolated "Friend of Friends" (FOF) \cite{FOF} halos from the Eagle simulations \cite{Eagle}, which follows the evolution of fixed-mass particles of $m_{\text{DM}} = 1.15\cdot 10^7\text{M}_{\odot}$ from $z=127$ to $z=0$. Eagle simulations adopt the cosmological model from Planck Collaboration et al. (2014) by taking the parameters 
+glass-like configuration in a periodic box of $106.5\text{Mpc}$. The $\Omega_\Lambda=0.693$, $\Omega_\text{m}=0.307$, $\Omega_\text{b}=0.048$ \& $\text{H}_0=67.77\text{kms} ^{-1}\text{Mpc}^{-1}$.\\
 
-State all the important specs of the Auriga simulations. On the first paragraph.\\
+These halos were randomly selected from a sample of the quartile of most isolated halos whose virial mass $M_200$ varied between $10^{12}M_\odot$ and $2\cdot 10^{12}M_\odot$. This mass is defined as the mass enclosed within the virial radius $R_{200}$ at which the density becomes 200 times the critical density of the universe. These halos were then re-simulated by increasing the mass resolution of the particles belonging to each halo and diminishing the resolution of the rest of the particles. This would efficiently simulate external gravitational effects over the studied structure and reproduce a high-resoluted version of it.\\
+
+Various versions of the same halo were simulated for different degrees of realism. All 30 halos were simulated within a level 4 degree of resolution defined for Aquarius simulations which corresponds to $\~ 2 000 000$ high resolution particles of $\~ 3 \cdot 10^5 M_\odot$. 
+
+$\Lambda \text{CDM}$ cosmology of this run follows:
+$\Omega_\Lambda=0.7274$, $\Omega_\text{m}=0.2726$,
+$\Omega_\text{b}=0.0456$, $\sigma_\text{s}=0.0809$,
+$\text{n}_\text{s}=0.963$ \& $\text{H}_0=70.4\text{kms} 
+^{-1}\text{Mpc}^{-1}$ which is consistent with the (last) Anisotropy
+Probe (WMAP)-9 \cite{AnisotropyProbe}. Illustris has a constant
+spatial resolution of $1.4\text{kpc}$ for DM particles in comoving
+units, and for baryonic particles it has the same spatial resolution
+of DM for $\text{z}\geq 1$, which is later modified to $0.7\text{kpc}$
+in physical units for the rest of the simulation. \\ 
+.  of mass $1<M_{200}/10^2M_\odot<2$  
 
 Talk about the different degrees of realism in this simulation> DM, MHD, resolution levels. State the importance of these aspects for the soundness (look better word) of the studies.\\
 
