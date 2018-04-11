@@ -12,7 +12,47 @@ glass-like configuration in a periodic box of $106.5\text{Mpc}$. The $\Omega_\La
 
 These halos were randomly selected from a sample of the quartile of most isolated halos whose virial mass $M_200$ varied between $10^{12}M_\odot$ and $2\cdot 10^{12}M_\odot$. This mass is defined as the mass enclosed within the virial radius $R_{200}$ at which the density becomes 200 times the critical density of the universe. These halos were then re-simulated by increasing the mass resolution of the particles belonging to each halo and diminishing the resolution of the rest of the particles. This would efficiently simulate external gravitational effects over the studied structure and reproduce a high-resoluted version of it.\\
 
-Various versions of the same halo were simulated for different degrees of realism. All 30 halos were simulated within a level 4 degree of resolution defined for Aquarius simulations which corresponds to $\~ 2 000 000$ high resolution particles of $\~ 3 \cdot 10^5 M_\odot$. From these halos, 6 of them where re-simulated at level 3 (higher) resolution taking into account a spatial factor of 2 in each dimension. Furthermore, fore each halo in each level of resolution there are two versions of the simulation. One evolves only DM particles and the other has into account all the magneto-hydrodynamical physics. Taking this into account, we can compare the results from different levels of realism to obtain consistency in our analysis.\\ 
+Various versions of the same halo were simulated for different degrees of realism. All 30 halos were simulated within a level 4 degree of resolution defined for Aquarius simulations which corresponds to $\~ 4 000 000$ high resolution particles of $\~ 4 \cdot 10^5 M_\odot$. From these halos, 6 of them where re-simulated at level 3 (higher) resolution taking into account a spatial factor of 2 in each dimension. Furthermore, fore each halo in each level of resolution there are two versions of the simulation. One evolves only DM particles and the other has into account all the magneto-hydrodynamical physics. Taking this into account, we can compare the results from different levels of realism to obtain consistency in our analysis.\\
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{?l?c|c?c|c?c|c?c|c?}
+\hline
+Halo & \multicolumn{2}{c?}{$N_P$/$10^6$} & \multicolumn{2}{c?}{$M_P$/$10^5M_\odot$} & \multicolumn{2}{c?}{$R_{vir}$/Kpc}&\multicolumn{2}{c?}{$M_{vir}$/$10^{14}M_\odot$}  \\ \hdashline
+& DM & MHD& DM & MHD& DM & MHD& DM & MHD\\ \hline \hline
+halo 1&4.068&2.447&2.397&2.022&196.927&187.674&9.062&7.844\\
+halo 2&5.625&5.457&2.481&2.093&235.094&233.934&15.418&15.191\\
+halo 3&3.826&3.852&2.645&2.231&210.693&210.955&11.099&11.141\\
+halo 4&4.585&4.530&2.590&2.185&219.378&215.438&12.529&11.866\\
+halo 5&3.262&3.290&2.533&2.137&196.984&197.246&9.071&9.106\\ \hdashline
+\rowcolor{blue!30} halo 6&3.184&3.110&2.337&1.972&191.840&189.342&8.378&8.054\\ \hdashline
+halo 7&3.878&3.729&2.296&1.937&197.864&196.509&9.193&9.005\\
+halo 8&2.772&2.796&2.451&2.068&190.716&191.764&8.231&8.368\\
+halo 9&3.038&3.010&2.738&2.310&195.826&190.640&8.911&8.222\\
+halo 10&2.700&2.751&2.541&2.144&187.139&188.147&7.777&7.904\\
+halo 11&4.146&4.116&2.541&2.144&221.821&219.568&12.952&12.560\\
+halo 12&2.865&2.908&2.645&2.231&192.280&192.038&8.436&8.404\\
+halo 13&3.520&3.600&2.393&2.019&202.139&203.815&9.801&10.048\\
+halo 14&4.200&4.475&2.499&2.108&215.535&218.927&11.882&12.453\\
+halo 15&2.888&2.845&2.541&2.144&199.848&200.658&9.471&9.588\\ \hdashline
+\rowcolor{blue!30} halo 16&3.821&3.871&2.499&2.108&212.590&212.632&11.401&11.408\\ \hdashline
+halo 17&2.752&2.781&2.552&2.153&188.067&187.404&7.893&7.811\\
+halo 18&3.770&3.624&2.738&2.310&201.124&207.293&9.655&10.571\\
+halo 19&2.989&3.086&2.645&2.231&200.244&200.325&9.527&9.540\\
+halo 20&3.903&3.822&2.481&2.093&210.097&211.423&11.005&11.214\\ \hdashline
+\rowcolor{blue!30} halo 21&4.105&4.075&2.640&2.227&219.527&219.823&12.555&12.604\\ \hdashline
+halo 22&2.794&2.766&2.625&2.215&188.363&184.801&7.931&7.489\\ \hdashline
+\rowcolor{blue!30} halo 23&3.977&4.073&2.795&2.358&217.768&215.959&12.254&11.952\\\hdashline
+\rowcolor{blue!30} halo 24&4.466&4.426&2.522&2.127&217.440&215.147&12.199&11.817\\ \hdashline
+halo 25&2.902&2.806&2.645&2.231&199.922&198.299&9.482&9.254\\
+halo 26&4.610&4.716&2.506&2.115&219.984&218.939&12.633&12.454\\\hdashline
+\rowcolor{blue!30} halo 27&5.060&5.018&2.590&2.185&228.036&226.225&14.071&13.740\\ \hdashline
+halo 28&4.184&4.276&2.645&2.231&216.979&217.997&12.121&12.294\\
+halo 29&4.827&4.613&2.499&2.108&225.791&219.935&13.660&12.625\\
+halo 30&3.268&3.112&2.579&2.176&195.043&194.741&8.805&8.763\\
+\hline
+\end{tabular}
+\end{table} 
 
 \begin{figure}[!ht]
     \centering
@@ -24,11 +64,15 @@ Various versions of the same halo were simulated for different degrees of realis
 
 These simulations were  performed using the hydrodynamic code AREPO
 \cite{Arepo}, which combines a moving Voronoi tessellation with the
-finite volume approach. In this way, AREPO solves the principal sources of nummerical errors from both important paradigms of computational hydrodynamics in the cosmological context. Parallel the evolution algorithm, there are
+finite volume approach. In this way, AREPO solves the principal sources of nummerical errors from both important paradigms of computational hydrodynamics in the cosmological context. Parallel to the evolution algorithm, there are
 galaxy formation models which account for the evolution of stars and
 SMBHs. Specifically, the physics followed by this model includes
 energetic feedback from supermassive black holes and supernovae, as
 well as stellar evolution and chemical enrichment. These models are consistent and do not need recalibration of parameters for each level of resolution.\\
+
+
+
+
 
 
 \section{Determining the halo shape}
