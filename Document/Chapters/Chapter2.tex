@@ -2,12 +2,11 @@
 In this chapter describe in detail the specifications of the simulations we are going to work with. Furthermore, we present the chosen method for determining the halo shapes. This chapter is mainly to thoroughly explain how are we going to do everything that we are going to do.\\
 
 \section{The Auriga simulations}
-In this monograph we use the results of the state-of-the art Auriga simulations \cite{Auriga}. It selected a set of 30 isolated "Friend of Friends" (FOF) \cite{FOF} halos from the Eagle simulations \cite{Eagle}, which follows the evolution of fixed-mass particles of $m_{\text{DM}} = 1.15\cdot 10^7\text{M}_{\odot}$ from $z=127$ to $z=0$. Eagle simulations adopt the cosmological model from Planck Collaboration et al. (2014) by taking the parameters 
-glass-like configuration in a periodic box of $106.5\text{Mpc}$. The $\Omega_\Lambda=0.693$, $\Omega_\text{m}=0.307$, $\Omega_\text{b}=0.048$ \& $\text{H}_0=67.77\text{kms} ^{-1}\text{Mpc}^{-1}$.\\
+In this monograph we use the results of the state-of-the art Auriga simulations \cite{Auriga}. It selected a set of 30 isolated halos from the Eagle simulations \cite{Eagle}. Each halo was identified with a modified version of the algorithm "Friend of Friends" (FOF) \cite{FOF}, that recursively links particles if they are closer than some distanse threshold called linking length. Eagle follows the evolution of fixed-mass particles of $m_{\text{DM}} = 1.15\cdot 10^7\text{M}_{\odot}$ from $z=127$ to $z=0$. Eagle simulations adopt the cosmological model from Planck Collaboration et al. (2014) by taking the parameters $\Omega_\Lambda=0.693$, $\Omega_\text{m}=0.307$, $\Omega_\text{b}=0.048$ \& $\text{H}_0=67.77\text{kms} ^{-1}\text{Mpc}^{-1}$.\\
 
-These halos were randomly selected from a sample of the quartile of most isolated halos whose virial mass $M_200$ varied between $10^{12}M_\odot$ and $2\cdot 10^{12}M_\odot$. This mass is defined as the mass enclosed within the virial radius $R_{200}$ at which the density becomes 200 times the critical density of the universe. These halos were then re-simulated by increasing the mass resolution of the particles belonging to each halo and diminishing the resolution of the rest of the particles. This would efficiently simulate external gravitational effects over the studied structure and reproduce a high-resoluted version of it.\\
+These halos were randomly selected from a sample of the quartile of most isolated halos whose virial mass $M_{200}$ varied between $10^{12}M_\odot$ and $2\cdot 10^{12}M_\odot$. This mass is defined as the mass enclosed within the virial radius $R_{200}$ at which the density becomes 200 times the critical density of the universe. These halos were then re-simulated by increasing the mass resolution of the particles belonging to each halo and diminishing the resolution of the rest of the particles. This would efficiently simulate external gravitational effects over the studied structure and reproduce a high-resoluted version of it.\\
 
-Various versions of the same halo were simulated for different degrees of realism. All 30 halos were simulated within a level 4 degree of resolution defined for Aquarius simulations which corresponds to $\~ 4 000 000$ high resolution particles of $\~ 4 \cdot 10^5 M_\odot$. From these halos, 6 of them where re-simulated at level 3 (higher) resolution taking into account a spatial factor of 2 in each dimension. Furthermore, fore each halo in each level of resolution there are two versions of the simulation. One evolves only DM particles and the other has into account all the magneto-hydrodynamical physics. Taking this into account, we can compare the results from different levels of realism to obtain consistency in our analysis.\\
+Various versions of the same halo were simulated for different degrees of realism. All 30 halos were simulated within a level 4 degree of resolution defined for Aquarius simulations which corresponds to $\tilde 3\cdot 10^6$ high resolution particles of $\tilde 2.5 \cdot 10^5 M_\odot$. The principal details of each of these halos are consigned on the table \ref{tab:level4}. From these halos, 6 of them where re-simulated at level 3 (higher) resolution taking into account a spatial factor of 2 in each dimension. For more information about level 3 halos, their information is printed on table \ref{tab:level3}. Furthermore, fore each halo in each level of resolution there are two versions of the simulation. One evolves only DM particles and the other has into account all the magneto-hydrodynamical physics, including DM. Taking this into account, we can compare the results from different levels of realism to obtain consistency in our analysis.\\
 
 \begin{table}[h!]
 \centering
@@ -50,7 +49,7 @@ halo 30&3.268&3.112&2.579&2.176&195.043&194.741&8.805&8.763\\
 \hline
 \end{tabular}
 \caption{Specifications of each level 4 galaxy (halo). The DM and MHD versions of each parameters are presented together. The columns of this table indicate: (1) Halo name, (2,3) Number of (millions) of DM particles belonging to the halo, (4,5) Mass per particle in $10^5M_\odot$, (6,7) Virial radius (R TopHat 200) of the halo in Kpc, (8,9) Virial mass of the halo in $10^{14}M_\odot$.}
-\label{tab:level34}
+\label{tab:level4}
 \end{table} 
 
 \begin{table}[h!]
@@ -70,28 +69,15 @@ halo 27&39.617&39.056&0.324&0.273&227.908&223.484&14.048&13.244\\
 \hline
 \end{tabular}
 \caption{Specifications of each level 3 galaxy (halo). The DM and MHD versions of each parameters are presented together. The columns of this table indicate: (1) Halo name, (2,3) Number of (millions) of DM particles belonging to the halo, (4,5) Mass per particle in $10^5M_\odot$, (6,7) Virial radius (R TopHat 200) of the halo in Kpc, (8,9) Virial mass of the halo in $10^{14}M_\odot$.}
-\label{tab:level34}
+\label{tab:level3}
 \end{table} 
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{./pics/Auriga.png}
-    \caption{Set of 30 MW-like simulations, taken from http://auriga.h-its.org/}
+    \caption{Set of 30 MW-like simulations from Auriga, taken from http://auriga.h-its.org/}
     \label{fig:auriga}
 \end{figure}
-
-
-These simulations were  performed using the hydrodynamic code AREPO
-\cite{Arepo}, which combines a moving Voronoi tessellation with the
-finite volume approach. In this way, AREPO solves the principal sources of nummerical errors from both important paradigms of computational hydrodynamics in the cosmological context. Parallel to the evolution algorithm, there are
-galaxy formation models which account for the evolution of stars and
-SMBHs. Specifically, the physics followed by this model includes
-energetic feedback from supermassive black holes and supernovae, as
-well as stellar evolution and chemical enrichment. These models are consistent and do not need recalibration of parameters for each level of resolution.\\
-
-
-
-
 
 
 \section{Determining the halo shape}
