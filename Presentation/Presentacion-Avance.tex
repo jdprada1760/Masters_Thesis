@@ -40,7 +40,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage[caption=false]{subfig}
+\usepackage[caption=true]{subfig}
 
 \newtheorem*{thm}{Theorem}
 \newcommand{\fmunu}{F^{\mu\nu}}
@@ -124,7 +124,7 @@
 % - Keep it simple, no one is interested in your street address.
 
 \tiny
-\date{ \footnotesize October 20, 2017}
+\date{ \footnotesize May, 2018}
 % - Either use conference name or its abbreviation.
 % - Not really informative to the audience, more for people (including yourself) who are reading the slides online
 	
@@ -185,7 +185,7 @@
 \begin{itemize}
 \small
 \item We have not measured DM directly.
-\item For predictions, \textbf{DM density field} of an object is needed.
+\item \textbf{DM density field} of an object is needed.
 \item DM evidence is not that far: MW
 \item MW is the only object of which we have tridimensional view from the interior.
 \end{itemize}
@@ -207,7 +207,7 @@ The DM density field is often reduced to a radial profile:
 
 which is universal in a hierarchical model of formation \cite{Navarro1997}.\\~\\
 
-Double-power law omits angular dependence of density (\textbf{shape}).\\~\\
+Radial profiles omit angular dependence of density (\textbf{shape}).\\~\\
 
 DM halos are not \textbf{spherical} but \textbf{triaxial} \cite{Allgood2006} (acretion)\\~\\
 
@@ -221,7 +221,7 @@ Besides being a more complete characterization of density, it can keep memory of
 \subsection{Observational constraints on MW's DM halo}
 \begin{frame}
 
-Given this interest, there have been efforts for constraints on our MW's DM halo shape. \cite{Loebman2012,LawMajewski2010,Vera-Ciro2013,}
+Some efforts for constraints on the MW's DM halo shape. \cite{Loebman2012,LawMajewski2010,Vera-Ciro2013,}
 
 \begin{figure}[c]
 \includegraphics[width=1\linewidth]{./pics/loebmanJean.png}
@@ -248,9 +248,9 @@ Given this interest, there have been efforts for constraints on our MW's DM halo
 
 \item Jean's axisymmetric equations relate $a_z , a_R$ with stellar number density $\nu$, mean azimuthal velocity $\overline{v}_{\phi}$ and velocity dispersions.
 
-\item Once we account for visible matter, dark matter contribution can be estimated from observations (SDSS) and Jean's equations \cite[van der Marel 1991]{vanDerMarel1991}.
+\item Dark matter contribution can be estimated from observations (SDSS) and Jean's equations \cite[van der Marel 1991]{vanDerMarel1991}.
 
-\item They assumed a perfectly oblate halo and obtained a minor-to-major axis ratio of $q_{DM} = 0.47 \pm 0.14$.
+\item Their result was an oblate halo with $q_{DM} = 0.47 \pm 0.14$.
 
 \end{itemize}
 
@@ -288,13 +288,15 @@ A more interesting approach: The Sagitarius stream with a triaxial halo \cite[La
 \small
 \begin{itemize}
 
-\item The Sagitarius stream is characterized by a set of distances, radial velocities and angular positions. These are interpreted as the orbit of the CM of the galaxy.
+\item Characterization of the sagitarius stream.
 
-\item They vary the halo parameters and evolve a set of particles to see if they match the stream.
+\item Variation of parameters: Match simulations with observations.
 
-\item The assumption of an axisymmetric halo cannot reproduce all the properties of the stream.
+\item Mismatch between an axisymmetric halo and observations.
 
-\item The best fit parameters are of a triaxial halo $20<r<60 kpc$ with $c/a = 0.72$, $b/a = 0.99$. 
+\item The best fit parameters are $c/a = 0.72$, $b/a = 0.99$ at $20<r<60 kpc$. 
+
+\item Axis orientation
 
 \end{itemize}
 
@@ -306,32 +308,32 @@ A more interesting approach: The Sagitarius stream with a triaxial halo \cite[La
 
 %---------------------------------------------------------------------------------------
 \begin{frame}
-All these observations made strong assumptions or simplifications:
+Strong assumptions or simplifications:
 
 \begin{itemize}
-\item Loebman et al. (Jean's equations): DM halo is perfectly oblate, cylindric Jean's equations.
+\item \textbf{Loebman et al.}: DM halo is perfectly oblate, cylindric Jean's equations.
 
-\item Law \& Majewski: Sagitarius stream traces the CM of the galaxy, omission of radial matter field.
+\item \textbf{Law \& Majewski}: Approximation of stream as CM. Omission of LMC.
 \end{itemize}
 
-These simplifications have to be done due to the dificulty to obtain complete observations of our own galaxy:
+Observational difficulties:
 
 \begin{itemize}
-\item Velocities that are perpendicular to the line of sight cannot be measured direcly (precisely).
+\item Perpendicular velocities
 
-\item We loose sensitivity of mass distribution in the line of sight.
+\item Radial mass distribution
 \end{itemize}
 
 \end{frame}
 
 %---------------------------------------------------------------------------------------
-\subsection{Cosmological simulations to the rescue!}
+\subsection{The utility of Cosmological simulations}
 
 \begin{frame}
 
-We use simulations as a support tool for observations and theory.\\~\\
+Support tool for observation and theory.\\~\\
 
-Cosmological simulations (the ones we like) follow the evolution of DM and gas in a $\Lambda CDM$ cosmology:
+Evolution of DM and gas in a $\Lambda CDM$ cosmology:
 
 \begin{block}{Self-gravitating collisionless fluid for DM}
 \tiny
@@ -370,12 +372,11 @@ Cosmological simulations (the ones we like) follow the evolution of DM and gas i
 \footnotesize
 \begin{itemize}
 
-\item How do they track this evolution? SPH MMH.
-\item Feedback processes are one of the most important features of these simulations.
+\item Evolution: SPH MMH.
+\item Energetic feedback.
 \item We focus on AURIGA \cite{auriga} simulations made with AREPO \cite{arepo}.
-\item These are a set of 30 MW-like galaxies with latest physics models and hydrodynamics numerical methods.
-\item Various versions of these simulations: resolution, presence of gas, presence of Magnetic Fields.
-\item One of the firsts and few simulations able to implement magnetic fields
+\item Various degrees of realism.
+\item Magnetic fields.
 
 \end{itemize}
 
@@ -386,7 +387,7 @@ Cosmological simulations (the ones we like) follow the evolution of DM and gas i
 \end{frame}
 
 %---------------------------------------------------------------------------------------
-\subsection{Example of how simulations complement observations}
+\subsection{Simulations and observations}
 \begin{frame}
 
 A study of the shape in terms of the radius and history.
@@ -426,18 +427,18 @@ A study of the shape in terms of the radius and history.
 %---------------------------------------------------------------------------------------
 \begin{frame}
 
-They made this analysis on the latest set of MW-like simulations (at the time), Aquarius \cite{aquarius}.\\~\\
+Aquarius simulations \cite{aquarius}.\\~\\
 
 Shape in terms of radius? How to measure it? \\~\\
 
-The main results are: 
+Their main results are: 
 
 \begin{itemize}
-\item Dependence of the DM halo shape on the radius.
+\item Dependence on the radius.
 
-\item Correlation of history of the DM halo shape with its history.
+\item Correlation of historical shape and present shape.
 
-\item DM halos are more prolate at early stages and more oblate-triaxial at late stages.
+\item Halos evolve towards prolate shapes.
 
 \end{itemize}
 
@@ -447,7 +448,7 @@ The main results are:
 %---------------------------------------------------------------------------------------
 \begin{frame}
 
-Given these results, we can now implement them on observations:
+Improvement on observational constraints:
 
 \begin{figure}[c]
 \includegraphics[width=1\linewidth]{./pics/veraCiroSagitarius.png}
@@ -459,25 +460,25 @@ Given these results, we can now implement them on observations:
 
 \begin{frame}
 
-This study is an improvement of the Law \& Majewski 2010 study in which asumptions are relaxed.\\~\\
+Iprovement of Law \& Majewski 2010 study with relaxed asumptions.\\~\\
 
-The DM halo has the following properties:
+The DM halo assumptions:
 
 \begin{itemize}
-\item It is axisymmetric at inner parts, \textbf{coherent with the MW disk}.
+\item Axisymmetric at inner parts, \textbf{coherent with the MW disk}.
 
-\item It is triaxial on the outer-skirts following the Law \& Majewski 2010 study.
+\item Triaxial on the outer-skirts.
 
-\item It has a smooth transition between those two regimes.
+\item Smooth transition.
 
 \end{itemize}
 
-They used variation of parameters in simulations to obtain the best fit:
+They used variation of parameters yield:
 
 \begin{itemize}
-\item DM halo is oblate with $qz = 0.9$ at $r \approx 10kpc$
+\item $qz = 0.9$ at $r \approx 10kpc$
 
-\item DM halo is triaxial with $b/a = 0.9, c/a = 0.8$ at $r>>30kpc$
+\item $b/a = 0.9, c/a = 0.8$ at $r>>30kpc$
 
 \end{itemize}
 
@@ -487,12 +488,11 @@ They used variation of parameters in simulations to obtain the best fit:
 \section{Our study}
 \subsection{Objectives}
 \begin{frame}
-Taking into account this introduction and the state-of-the art simulations from AURIGA, we are motivated to make an study with the following objectives.
 
 \begin{itemize}
 \item Study the shape of the DM halo in terms of the radius in the AURIGA simulations.
 
-\item Verify that the shape of the DM halo keeps memory by studying its dependence with redshift.
+\item Study the correlation of the radial and historical profiles.
 
 \item \textbf{\textit{Analyze the relation or the effect of baryons on the DM halo shape.}}
 
@@ -501,10 +501,10 @@ Taking into account this introduction and the state-of-the art simulations from 
 \end{frame}
 
 %---------------------------------------------------------------------------------------
-\subsection{How we calculate DM shapes in terms of radius (simulations)}
+\subsection{How do we calculate DM shapes in terms of radius? (simulations)}
 \begin{frame}
 \footnotesize
-We use the method used by Vera-Ciro et al. 2011 to calculate shapes.\\~\\
+We follow Vera-Ciro et al. 2011 (Allgood et al. 2006) to calculate shapes.\\~\\
 
 Shapes are determined by the semiaxes $a,b,c$ of the ellipsoid associated to the halo.\\~\\
 
@@ -515,6 +515,7 @@ I_{ij} = \sum_k \frac{x_k^{(i)}x_k^{(j)}}{d^2_k}
 \end{equation}
 
 The eigenvalues of this tensor are said semiaxes along the corresponding eigenvectors.\\~\\
+
 But this is not sufficient: Calculate ellipse from spherical selection of particles.
 
 \end{frame}
@@ -542,102 +543,132 @@ The semiaxes are recalculated the rescaling is performed iteratively until we ac
 \end{frame}
 
 %---------------------------------------------------------------------------------------
-\subsection{Our results}
-
-\begin{frame}[plain]
-
-\begin{columns}[c]
-
-\begin{column}{.5\textwidth}
-
-\begin{figure}
-\subfloat{%
-  \includegraphics[clip,width=0.8\columnwidth]{./pics/halo9DM_in.png}%
-}
-
-\subfloat{%
-  \includegraphics[clip,width=0.8\columnwidth]{./pics/halo9DM_out.png}%
-}
-\caption{\tiny DM simulation: Halo 9}
-
+\subsection{Convergence analysis}
+\begin{frame}
+\begin{figure}[!ht]
+  \centering
+  \subfloat[halo 24 MHD]{\includegraphics[width=0.45\columnwidth]{../Document/pics/Convergence/rand_conv_halo24_DM.png}}
+  \hfill
+  \subfloat[halo 24 DM]{\includegraphics[width=0.45\columnwidth]{../Document/pics/Convergence/rand_conv_halo24_MHD.png}}
+  %\caption{The few-particle effect on the axial ratios convergence for halo 24 (DM \& MHD). Here level4 curves (magenta) are compared to  the 3$\sigma$ range (clear blue) of the random-sampled curves from level3 (solid blue). We deduce from the fractional difference (green) that discrepancies at $r>>1$Kpc cannot be explained solely with the few-particle bias. }
+  \label{fig:convergence}  
 \end{figure}
-
-\end{column}
-
-\begin{column}{.5\textwidth}
-
-\begin{figure}
-\subfloat{%
-  \includegraphics[clip,width=0.8\columnwidth]{./pics/halo9MHD_in.png}%
-}
-
-\subfloat{%
-  \includegraphics[clip,width=0.8\columnwidth]{./pics/halo9MHD_out.png}%
-}
-\caption{\tiny MHD simulation: Halo 9}
-
-\end{figure}
-
-
-\end{column}
-
-\end{columns}
-
 \end{frame}
 
 %---------------------------------------------------------------------------------------
-\begin{frame}[plain]
-
-\begin{columns}[c]
-
-\begin{column}{.5\textwidth}
+\begin{frame}
 \begin{figure}
-\includegraphics[width=1.1\columnwidth]{./pics/parte1.png}
-\caption{\tiny Semiaxes ratios}
-\end{figure}
-\end{column}
-
-\begin{column}{.5\textwidth}
 \centering
-\begin{figure}
-\includegraphics[width=1.1\columnwidth]{./pics/parte2.png}
-\caption{\tiny Semiaxes ratios and Triaxiality $\frac{a^2-b^2}{a^2-c^2}$}
+\subfloat{\includegraphics[width=0.45\columnwidth]{../Document/pics/halo16.png}}
+  \hfill
+\subfloat{\includegraphics[width=0.45\columnwidth]{../Document/pics/halo27.png}}
+
+%\caption{Radial profile for axial ratios and the triaxiality parameter $T=\frac{1-b/a}{1-c/a}$ from halo 27 and halo 16. These halos have a clear radial tendence towards sphericity (for smaller radii until $\approx 3$Kpc), which can be confirmed with the triaxiality parameter. }
+\label{fig:DM_MHD}
+\end{figure} 
+
+\end{frame}
+
+%---------------------------------------------------------------------------------------
+\subsection{Radial dependence of shape}
+\begin{frame}[plain]
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[\tiny halo 27 DM shape (small radius)]{\includegraphics[width=0.4\columnwidth]{../Document/pics/MHD_Vs_DM/level4_DM_halo_27_inner.png}}
+  \hfill
+  \subfloat[\tiny halo 27 DM shape (big radius)]{\includegraphics[width=0.4\columnwidth]{../Document/pics/MHD_Vs_DM/level4_DM_halo_27_outter.png}}
+  \hfill
+  \subfloat[\tiny halo 27 MHD shape (small radius)]{\includegraphics[width=0.4\columnwidth]{../Document/pics/MHD_Vs_DM/level4_MHD_halo_27_inner.png}}
+  \hfill
+  \subfloat[\tiny halo 27 MHD shape (big radius)]{\includegraphics[width=0.4\columnwidth]{../Document/pics/MHD_Vs_DM/level4_MHD_halo_27_outter.png}}
+ % \caption{DM density for inner (left) and outer (right) parts of the halo 27. We present both versions: DM (up) \& MHD (down). The horizontal and vertical axes are aligned to the major and medium semi-axes respectively. Here, it is evident that this halo is more spherical at bigger radii and more triaxial at the central parts. }
+\normalsize
+  \label{fig:slices}
 \end{figure}
-
-\end{column}
-
-\end{columns}
 
 
 \end{frame}
+
 %---------------------------------------------------------------------------------------
 
 \begin{frame}[plain]
 
-\begin{columns}[c]
-
-\begin{column}{.5\textwidth}
-\begin{figure}
-\includegraphics[width=1.1\columnwidth]{./pics/Triaxiality_Inner.png}
-\caption{\tiny Comparison in triaxiality plane DM vs MHD at $0.01_{Rvir}$}
+\begin{figure}[!ht]
+  \centering
+  \subfloat[\tiny Level4 MHD Vs DM at inner regions]{\includegraphics[width=0.5\columnwidth]{../Document/pics/Triaxial_Plane/Triaxiality_Inner_lvl4.png}}
+  \hfill
+  \subfloat[\tiny Level4 MHD Vs DM at outer regions]{\includegraphics[width=0.5\columnwidth]{../Document/pics/Triaxial_Plane/Triaxiality_Outter_lvl4.png}}
+  \hfill
+  %\caption{Axial ratios as shown on $c/a$ Vs $b/a$. Each dot represents a halo shape at some radius. Some observational constraints are plotted alongside our results. Here, dots are clustered, proving the general tendence of halos to get rounder on the outer parts. }
+  \label{fig:Triaxiality_Inner_Outer}
 \end{figure}
-\end{column}
+\normalsize
 
-\begin{column}{.5\textwidth}
-\centering
-\begin{figure}
-\includegraphics[width=1.1\columnwidth]{./pics/Triaxiality_Outer.png}
-\caption{\tiny \tiny Comparison in triaxiality plane DM vs MHD at $_{Rvir}$}
+\end{frame}
+
+%---------------------------------------------------------------------------------------
+\subsection{The effect of gas}
+\begin{frame}
+\begin{figure}[!ht]
+  \centering
+  \subfloat[\tiny Level4 DM inner Vs outer regions]{\includegraphics[width=0.5\columnwidth]{../Document/pics/Triaxial_Plane/Triaxiality_DM_lvl4.png}}
+  \hfill
+  \subfloat[\tiny Level4 MHD inner Vs outer regions]{\includegraphics[width=0.5\columnwidth]{../Document/pics/Triaxial_Plane/Triaxiality_MHD_lvl4.png}}
+  \hfill
+  %\caption{General tendency on the triaxial plane $c/a$ Vs $b/a$. Some observational constraints are plotted alongside our results}
+  \label{fig:Triaxiality_DM_MHD}
 \end{figure}
-
-\end{column}
-
-\end{columns}
+\normalsize
 
 
 \end{frame}
 
 %---------------------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------------------
+\subsection{Historical and radial correlations}
+\begin{frame}
+
+\begin{figure}[!ht]
+  \centering
+  \subfloat[\tiny halo 16 DM]{\includegraphics[width=0.5\columnwidth]{../Document/pics/Redshift/halo_16_level3_DM_Z_Triax.png}}
+  \hfill
+  \subfloat[\tiny halo 21 DM]{\includegraphics[width=0.5\columnwidth]{../Document/pics/Redshift/halo_21_level3_DM_Z_Triax.png}}
+  %\caption{Historic shape (color dots) Vs actual radial shape (solid black line) on the Triaxiality plane. Each colored dot represents a calculated shape at R Mean 200, for each redshift. It is clear that halos with memory (halo 16), unlike disrupted halos (halo 21), have correlation between their historical and radial profiles.}
+  \label{fig:RedshiftDM}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}[plain]
+\begin{figure}[!ht]
+  \centering
+  \subfloat[halo 16 DM]{\includegraphics[width=0.45\columnwidth]{../Document/pics/Redshift/halo_16_level3_DM_Z.png}}
+  \hfill
+  \subfloat[halo 16 MHD]{\includegraphics[width=0.45\columnwidth]{../Document/pics/Redshift/halo_16_level3_MHD_Z.png}}
+  %\caption{Radial profile (comoving) of axial ratios for halo 16 in terms of redshift (color). This halo maintains its shape until $z\approx 1$ obviating the systematic rounding effect in time from asymmetric potentials. }
+  \label{fig:RedshiftGood}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}[plain]
+\begin{figure}[!ht]
+  \centering
+  \subfloat[halo 21 DM]{\includegraphics[width=0.45\columnwidth]{../Document/pics/Redshift/halo_21_level3_DM_Z.png}}
+  \hfill
+  \subfloat[halo 21 MHD]{\includegraphics[width=0.45\columnwidth]{../Document/pics/Redshift/halo_21_level3_MHD_Z.png}}
+  \caption{Radial profile (comoving) of axial ratios for halo 21 in terms of redshift (color). This halo is disrupted around $z \approx 0.5$ which results in a certain loss of its shape memory.}
+  \label{fig:RedshiftBad}
+\end{figure}
+
+
+\end{frame}
+
+
+
 
 %---------------------------------------------------------------------------------------
 \section{Future work}
@@ -646,13 +677,11 @@ The semiaxes are recalculated the rescaling is performed iteratively until we ac
 
 \begin{itemize}
 
-\item Study the historical shape\\~\\
+\item Study the effec of environmental structures on halo shape and orientation.\\~\\
 
-\item Verify the effec of gas in the shape of DM halos\\~\\
+\item Study the response of DM halos to the presence of matter (Adiabatic contraction).\\~\\
 
-\item Compare our results with previous works (observational and theoretical)\\~\\
-
-\item Write thesis\\~\\
+\item Paper
 
 \end{itemize}
 
